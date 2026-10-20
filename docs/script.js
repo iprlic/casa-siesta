@@ -1,26 +1,10 @@
 // Photo lightbox for Apartment Mar.
-const photos = [
-  "Roof terrace with a sea view",
-  "Shaded terrace with a dining table",
-  "Terrace table under the parasol",
-  "Sun loungers on the roof terrace",
-  "Balcony",
-  "Kitchen",
-  "Living and dining room",
-  "Dining table and sofa",
-  "Kitchen with the door to the terrace",
-  "Entrance and kitchen",
-  "Double bedroom",
-  "Double bedroom",
-  "Double bedroom",
-  "Twin bedroom",
-  "Twin bedroom",
-  "Bedroom with the balcony door",
-  "Hallway",
-  "Shower",
-  "Bathroom with a washing machine",
-  "Bathroom",
-].map((alt, i) => ({ src: `img/mar/${String(i + 1).padStart(2, "0")}.jpg`, alt }));
+// Captions live in the page (one set per language) so this file stays shared.
+const photoData = JSON.parse(document.getElementById("photo-data").textContent);
+const photos = photoData.captions.map((alt, i) => ({
+  src: `/img/mar/${String(i + 1).padStart(2, "0")}.jpg`,
+  alt,
+}));
 
 const box = document.querySelector(".lightbox");
 const img = box.querySelector("img");
@@ -32,7 +16,7 @@ function show(i) {
   current = (i + photos.length) % photos.length;
   img.src = photos[current].src;
   img.alt = photos[current].alt;
-  caption.textContent = `${photos[current].alt} (${current + 1} of ${photos.length})`;
+  caption.textContent = `${photos[current].alt} (${current + 1} ${photoData.of} ${photos.length})`;
   // Warm the cache for the next photo so stepping through feels instant.
   new Image().src = photos[(current + 1) % photos.length].src;
 }
@@ -67,4 +51,10 @@ box.addEventListener("touchend", (e) => {
   const dx = e.changedTouches[0].clientX - touchX;
   if (Math.abs(dx) > 50) show(current + (dx < 0 ? 1 : -1));
   touchX = null;
+});
+
+// Close the language menu when clicking anywhere else.
+const langs = document.querySelector(".langs");
+document.addEventListener("click", (e) => {
+  if (langs && langs.open && !langs.contains(e.target)) langs.open = false;
 });

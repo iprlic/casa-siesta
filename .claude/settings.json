@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -m http.server:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(gh api repos/iprlic/casa-siesta/pages:*)",
+      "WebFetch(domain:casa-siesta.org)"
+    ],
+    "deny": [
+      "Read(./backup/**)"
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+# Old QloApps database dump and files: private, never push
+backup/
+
+# Personal Claude Code permissions (shared settings go in .claude/settings.json)
+.claude/settings.local.json
+
+.DS_Store
