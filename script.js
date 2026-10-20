@@ -1,0 +1,70 @@
+// Photo lightbox for Apartment Mar.
+const photos = [
+  "Roof terrace with a sea view",
+  "Shaded terrace with a dining table",
+  "Terrace table under the parasol",
+  "Sun loungers on the roof terrace",
+  "Balcony",
+  "Kitchen",
+  "Living and dining room",
+  "Dining table and sofa",
+  "Kitchen with the door to the terrace",
+  "Entrance and kitchen",
+  "Double bedroom",
+  "Double bedroom",
+  "Double bedroom",
+  "Twin bedroom",
+  "Twin bedroom",
+  "Bedroom with the balcony door",
+  "Hallway",
+  "Shower",
+  "Bathroom with a washing machine",
+  "Bathroom",
+].map((alt, i) => ({ src: `img/mar/${String(i + 1).padStart(2, "0")}.jpg`, alt }));
+
+const box = document.querySelector(".lightbox");
+const img = box.querySelector("img");
+const caption = box.querySelector("figcaption");
+let current = 0;
+let opener = null;
+
+function show(i) {
+  current = (i + photos.length) % photos.length;
+  img.src = photos[current].src;
+  img.alt = photos[current].alt;
+  caption.textContent = `${photos[current].alt} (${current + 1} of ${photos.length})`;
+  // Warm the cache for the next photo so stepping through feels instant.
+  new Image().src = photos[(current + 1) % photos.length].src;
+}
+
+document.querySelectorAll("[data-gallery] .g").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    opener = btn;
+    show(Number(btn.dataset.index));
+    box.showModal();
+  });
+});
+
+box.querySelector(".lb-prev").addEventListener("click", () => show(current - 1));
+box.querySelector(".lb-next").addEventListener("click", () => show(current + 1));
+box.querySelector(".lb-close").addEventListener("click", () => box.close());
+box.addEventListener("close", () => opener?.focus());
+
+box.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight") show(current + 1);
+  if (e.key === "ArrowLeft") show(current - 1);
+});
+
+// Click on the dark area (not the photo or buttons) closes it.
+box.addEventListener("click", (e) => {
+  if (e.target === box || e.target.tagName === "FIGURE") box.close();
+});
+
+let touchX = null;
+box.addEventListener("touchstart", (e) => { touchX = e.touches[0].clientX; }, { passive: true });
+box.addEventListener("touchend", (e) => {
+  if (touchX === null) return;
+  const dx = e.changedTouches[0].clientX - touchX;
+  if (Math.abs(dx) > 50) show(current + (dx < 0 ? 1 : -1));
+  touchX = null;
+});
