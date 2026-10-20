@@ -338,7 +338,7 @@ a { color: inherit; }
   .contact-ways { grid-template-columns: 1fr; }
   .trips-groups { grid-template-columns: 1fr; }
   .map { position: static; }
-  .map iframe { aspect-ratio: 4 / 3; }
+  .map iframe { aspect-ratio: 1; }
 }
 
 @media (max-width: 600px) {
