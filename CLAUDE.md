@@ -8,6 +8,7 @@ Static one-page site for Casa Siesta, two family-run holiday apartments (Mar and
 - `docs/{hr,sl,de,cs,it,pl}/index.html`: Croatian, Slovenian, German, Czech, Italian and Polish versions. Same HTML structure as English, only the text differs.
 - `docs/styles.css`, `docs/script.js`, `docs/img/`: shared by all languages. Always reference them with absolute paths (`/styles.css`, `/img/...`). The CSS and JS links carry a version (`/styles.css?v=4`): bump it in all 7 pages whenever you change `styles.css` or `script.js`, because GitHub Pages lets browsers cache them for 10 minutes and new HTML with old CSS breaks the layout.
 - `docs/CNAME`, `docs/.nojekyll`: needed by GitHub Pages; don't remove.
+- `docs/robots.txt`, `docs/sitemap.xml`, `docs/404.html`, `docs/favicon.ico`, `docs/img/social.jpg` (1200×630 link-preview image): SEO basics. When page content changes, update every `<lastmod>` date in `sitemap.xml`. A new language means a new entry in the sitemap, the hreflang block of every page, `og:locale:alternate` tags and `404.html`.
 - `backup/`: old QloApps database dump and files. Private and gitignored; never commit it.
 
 ## Rules

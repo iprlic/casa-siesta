@@ -30,6 +30,9 @@ docs/              the website (the only folder GitHub Pages publishes)
   script.js        photo viewer and language menu
   img/             photos, favicon
   CNAME            custom domain for GitHub Pages
+  robots.txt       crawler rules and sitemap location
+  sitemap.xml      all 7 pages with their language alternates
+  404.html         "page not found" in all languages
   .nojekyll        tells GitHub Pages to serve files as they are
 CLAUDE.md          project rules for Claude Code
 .claude/           shared Claude Code settings
@@ -50,7 +53,8 @@ Then open http://localhost:8000. You can also open `docs/index.html` directly, b
 1. **Text:** edit `docs/index.html`, then make the same change in each of the six translations. Every page should say the same thing.
 2. **Styles or script:** after editing `styles.css` or `script.js`, raise the version number in the links on all seven pages (`/styles.css?v=4` becomes `?v=5`). Otherwise browsers may keep the old file for up to 10 minutes.
 3. **Gallery captions:** they live in each page's `<script type="application/json" id="photo-data">` block, not in `script.js`.
-4. **Publish:** commit and push to `main`. GitHub Pages deploys in a minute or two.
+4. **Sitemap:** when the content changes, update the `<lastmod>` dates in `docs/sitemap.xml`.
+5. **Publish:** commit and push to `main`. GitHub Pages deploys in a minute or two.
 
 ### Adding photos
 
