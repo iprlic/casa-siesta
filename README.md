@@ -35,6 +35,7 @@ docs/              the website (the only folder GitHub Pages publishes)
   404.html         "page not found" in all languages
   .nojekyll        tells GitHub Pages to serve files as they are
 CLAUDE.md          project rules for Claude Code
+PROMOTION.md       checklist for getting found on Google, Maps and elsewhere
 .claude/           shared Claude Code settings
 backup/            old site's database dump (gitignored, never pushed)
 ```
