@@ -216,6 +216,12 @@ a { color: inherit; }
 
 .apt-single { margin: 0; }
 .apt-single img { width: 100%; border-radius: 4px; aspect-ratio: 4 / 3; object-fit: cover; }
+.apt-single .trio {
+  display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: .5rem; aspect-ratio: 4 / 3;
+}
+.apt-single .trio img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; aspect-ratio: auto; }
+.apt-single .trio-main { grid-row: span 2; }
 .apt-single figcaption { font-size: 1rem; font-style: italic; color: var(--pine); margin-top: .75rem; max-width: 34rem; }
 
 .both {
@@ -245,7 +251,7 @@ a { color: inherit; }
 .island-intro { font-size: 1.25rem; max-width: 40rem; }
 
 .things {
-  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(1.5rem, 3vw, 2.5rem);
 }
 .thing img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; margin-bottom: 1.1rem; }
@@ -254,7 +260,7 @@ a { color: inherit; }
 .thing .photo-credit { font: 400 .78rem/1.3 var(--sans); color: #9fbcc1; margin-top: .25rem; }
 .thing .photo-credit a { color: inherit; }
 .thing-wide {
-  grid-column: span 3;
+  grid-column: span 4;
   display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 2.5rem; align-items: end;
 }
 .thing-wide img { aspect-ratio: 16 / 8; margin: 0; }

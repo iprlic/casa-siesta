@@ -75,13 +75,12 @@ magick input.jpg -auto-orient -strip -resize 1600x1600\> -quality 78 -interlace 
 
 ## Photo credits
 
-Most photos are the owners' own. These come from elsewhere:
+Most photos are the owners' own, including the hero (Veliki Bokolj viewpoint), Brisa, the Mar gallery and most island photos. Originals are in the owners' iCloud Photos library and can be found with `osxphotos` (see `photos-inbox/`, which is gitignored). These come from elsewhere:
 
-- **Tkon (hero):** Andres rus, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Tkon.JPG).
-- **Island seen from the ferry:** Coralie Ferreira, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Trip_to_Croatia-Day_3-Zadar-Trip_to_Pasman_island_(2240106149).jpg).
-- **Village aerial, boats, olive tree:** [Unsplash](https://unsplash.com/license) (no attribution required).
+- **Island seen from the ferry** (Tkon card): Coralie Ferreira, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Trip_to_Croatia-Day_3-Zadar-Trip_to_Pasman_island_(2240106149).jpg). The credit is shown on the card.
+- **Olive tree** (cycling card): [Unsplash](https://unsplash.com/license), no attribution required.
 
-Both CC licences require the visible credit the page shows; keep it if you move or reuse these photos.
+The CC licence requires the visible credit the page shows; keep it if you move or reuse that photo.
 
 ## History
 

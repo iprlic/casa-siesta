@@ -17,7 +17,7 @@ Static one-page site for Casa Siesta, two family-run holiday apartments (Mar and
 - Photo captions for the Mar gallery live in each page's `<script type="application/json" id="photo-data">`, not in `script.js`.
 - Only state facts the owner has confirmed. Don't invent amenities, distances or prices.
 - Booking is by WhatsApp (+385 98 830 940), phone or email (info@casa-siesta.org). There is no booking engine on purpose.
-- Third-party photos need a visible credit (photographer and licence link), like the hero photo.
+- Third-party photos need a visible credit (photographer and licence link), like the Tkon card. Own photos come from the owners' iCloud Photos via `osxphotos`; strip metadata (GPS) when converting, and don't publish photos where people can be recognised.
 
 ## Confirmed facts
 
