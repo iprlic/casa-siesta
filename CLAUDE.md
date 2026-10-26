@@ -24,7 +24,7 @@ Static one-page site for Casa Siesta, two family-run holiday apartments (Mar and
 - Officially rated 3 stars. Minimum stay 7 nights. Check-in from 14:00, check-out by 10:00.
 - Both apartments: air conditioning, Wi-Fi, kitchen with dishwasher, washing machine, free parking.
 - The price includes bed linen, towels, tourist tax and final cleaning. Prices are not set yet ("On request").
-- Doctor and dentist in Neviđane. Restaurant in the village. Supermarket and ferry to Biograd in Tkon (10 km).
+- Doctor and dentist in Neviđane. Restaurant in the village. Nearest supermarket in Mali Pašman (about 3 km). ATM in Pašman village (5 km). Pharmacy and ferry to Biograd in Tkon (10 km).
 
 ## Preview and publish
 
