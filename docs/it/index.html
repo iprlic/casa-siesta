@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=6">
+  <link rel="stylesheet" href="/styles.css?v=7">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -89,6 +89,21 @@
         "@type": "LocationFeatureSpecification",
         "name": "Free parking",
         "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Barbecue",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Baby cot",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "High chair",
+        "value": true
       }
     ],
     "checkinTime": "14:00",
@@ -100,7 +115,12 @@
       "longitude": 15.3455
     },
     "hasMap": "https://www.google.com/maps?cid=14389742535623081854",
-    "numberOfRooms": 2
+    "numberOfRooms": 2,
+    "petsAllowed": true,
+    "knowsLanguage": [
+      "hr",
+      "en"
+    ]
   }
   </script>
 </head>
@@ -138,7 +158,7 @@
       <img class="hero-img" src="/img/hero.jpg" alt="Panorama dal belvedere Veliki Bokolj: macchia verde, il canale di Pašman e la terraferma sotto nuvole bianche" fetchpriority="high">
       <div class="hero-text">
         <h1 id="hero-title">Casa<br>Siesta</h1>
-        <p class="hero-lede">Due appartamenti per le vacanze a Neviđane, un villaggio di pescatori sulla tranquilla isola di Pašman, in Croazia. La spiaggia è a pochi passi e qui la vita scorre lenta.</p>
+        <p class="hero-lede">Due appartamenti per le vacanze a Neviđane, un villaggio di pescatori sulla tranquilla isola di Pašman, in Croazia. La spiaggia è a circa 200 m e qui la vita scorre lenta.</p>
         <div class="hero-actions">
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Ciao%2C%20vorrei%20informazioni%20per%20un%20soggiorno%20a%20Casa%20Siesta." target="_blank" rel="noopener">Scriveteci su WhatsApp</a>
           <a class="btn btn-ghost" href="#apartments">Scoprite gli appartamenti</a>
@@ -163,10 +183,10 @@
         <div class="apt-body">
           <h3 id="mar-title">Appartamento Mar</h3>
           <p class="apt-sub">L'appartamento al piano superiore, con terrazza sul tetto</p>
-          <p>Mar occupa tutto l'ultimo piano. Ha due camere da letto sotto il tetto spiovente, una cucina open space con zona pranzo e aria condizionata, un balcone e una grande terrazza sul tetto con vela ombreggiante, tavolo da pranzo e lettini. Dalla terrazza lo sguardo spazia oltre i pini fino al mare.</p>
+          <p>Mar occupa tutto l'ultimo piano. Ha due camere da letto sotto il tetto spiovente, una con letto matrimoniale e una con due letti singoli, una cucina open space con zona pranzo e aria condizionata, un balcone e una grande terrazza sul tetto con pergolato, tavolo da pranzo e lettini. Dalla terrazza lo sguardo spazia oltre i pini fino al mare.</p>
           <dl class="facts">
             <div><dt>Posti letto</dt><dd>Fino a 5</dd></div>
-            <div><dt>Letti</dt><dd>Queen size, matrimoniale, divano letto</dd></div>
+            <div><dt>Letti</dt><dd>Letto matrimoniale, due letti singoli, divano letto</dd></div>
             <div><dt>Esterni</dt><dd>Terrazza sul tetto e balcone</dd></div>
             <div><dt>Prezzo</dt><dd>Su richiesta</dd></div>
           </dl>
@@ -185,11 +205,12 @@
         </figure>
         <div class="apt-body">
           <h3 id="brisa-title">Appartamento Brisa</h3>
-          <p class="apt-sub">L'appartamento più piccolo</p>
-          <p>Brisa è un appartamento compatto e pratico, per una coppia o una piccola famiglia. È la scelta giusta se passerete le giornate in spiaggia o in barca e cercate una base semplice e comoda.</p>
+          <p class="apt-sub">L'appartamento più piccolo, al piano terra</p>
+          <p>Brisa si trova al piano terra e ha una camera da letto, un soggiorno con cucina nuovissima, un bagno e un WC separato. È adatto a una coppia o a una piccola famiglia, ed è la scelta giusta se passerete le giornate in spiaggia o in barca e cercate una base semplice e comoda.</p>
           <dl class="facts">
             <div><dt>Posti letto</dt><dd>Fino a 4</dd></div>
-            <div><dt>Letti</dt><dd>Letto a castello, divano letto</dd></div>
+            <div><dt>Letti</dt><dd>Letto a castello, divano letto che si apre in un letto matrimoniale</dd></div>
+            <div><dt>Esterni</dt><dd>Il giardino</dd></div>
             <div><dt>Prezzo</dt><dd>Su richiesta</dd></div>
           </dl>
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Ciao%2C%20vorrei%20informazioni%20sull%27Appartamento%20Brisa." target="_blank" rel="noopener">Chiedete info su Brisa</a>
@@ -208,9 +229,12 @@
               <li>Parcheggio gratuito presso la casa</li>
               <li>Check-in dalle 14:00</li>
               <li>Check-out entro le 10:00</li>
-              <li>Soggiorno minimo di 7 notti</li>
+              <li>Barbecue in giardino</li>
+              <li>Animali domestici benvenuti</li>
+              <li>Culla e seggiolone</li>
             </ul>
             <p class="included"><strong>Incluso nel prezzo:</strong> biancheria da letto, asciugamani, tassa di soggiorno e pulizia finale. Nessun costo aggiuntivo.</p>
+            <p class="season">Aperto durante la stagione estiva. Il soggiorno minimo è di 7 notti e potete arrivare in qualsiasi giorno.</p>
             <p class="stars"><span aria-hidden="true">★★★</span> Entrambi gli appartamenti sono classificati ufficialmente a tre stelle.</p>
           </div>
         </div>
@@ -235,7 +259,7 @@
         <h2 id="island-title" class="section-title">Pašman, l'isola lenta</h2>
         <div class="island-intro">
           <p>Pašman fa parte dell'arcipelago di Zadar (Zara): è collegata a Ugljan da un ponte e dista dalla terraferma solo un breve tratto in traghetto. È un'isola di acque limpide, pinete, uliveti e piccoli villaggi dalmati, senza la folla delle isole più famose.</p>
-          <p>Neviđane si trova sul lato orientale dell'isola. Ha un porto ancora attivo, un ristorante con pesce fresco e piatti dalmati e una piccola galleria.</p>
+          <p>Neviđane si trova sul lato orientale dell'isola. Ha un porto ancora attivo, una piccola galleria e il nostro ristorante preferito, Stari Zidi, che serve pesce fresco e piatti dalmati.</p>
         </div>
       </div>
 
@@ -251,7 +275,7 @@
           <img src="/img/island/beach.jpg" alt="Bambini che giocano nell'acqua limpida e bassa della spiaggia del paese" loading="lazy">
           <div>
             <h3>La spiaggia</h3>
-            <p>La spiaggia del villaggio è a pochi passi dalla casa. L'acqua è limpida e bassa, ideale per nuotare e fare snorkeling, e raramente è affollata.</p>
+            <p>La spiaggia del villaggio è a circa 200 m dalla casa. L'acqua è limpida e bassa, ideale per nuotare e fare snorkeling, e raramente è affollata.</p>
           </div>
         </article>
         <article class="thing">
@@ -306,7 +330,7 @@
             <ul class="trip-list">
               <li>
                 <a href="https://zadar.travel/" target="_blank" rel="noopener">Zadar</a>
-                <span class="trip-meta">Circa 30 min da Biograd, oppure in traghetto da Ugljan</span>
+                <span class="trip-meta">Circa 40 min da Biograd, oppure in traghetto da Ugljan</span>
                 <p>Il Foro romano, l'Organo marino e il Saluto al Sole sul lungomare, e il tramonto che, si dice, Alfred Hitchcock definì il più bello del mondo.</p>
               </li>
               <li>
@@ -347,17 +371,17 @@
           <p class="address">Put Tratice 6, 23264 Neviđane, Pašman, Croazia</p>
 
           <h3>Da Zadar</h3>
-          <p>Prendete il traghetto Jadrolinija dal porto di Zadar per Preko, su Ugljan (circa 25 minuti, con partenze frequenti). Attraversate il ponte per Pašman e proseguite verso sud fino a Neviđane: circa 20 minuti.</p>
+          <p>Prendete il traghetto Jadrolinija dal porto di Zadar per Preko, su Ugljan (circa 25 minuti, con partenze frequenti). Attraversate il ponte per Pašman e proseguite verso sud fino a Neviđane. Da Preko il tragitto in auto dura circa 30 minuti.</p>
 
           <h3>Da Biograd na Moru</h3>
-          <p>Prendete il traghetto per Tkon, sulla punta meridionale di Pašman (circa 25 minuti), poi guidate per 10 km verso nord fino a Neviđane. In auto da Zagabria, Biograd dista circa 3,5 ore sull'A1. Da Spalato circa 1,5 ore.</p>
+          <p>Prendete il traghetto per Tkon, sulla punta meridionale di Pašman (circa 25 minuti), poi guidate per 10 km verso nord fino a Neviđane (circa 15 minuti). In auto da Zagabria, Biograd dista circa 3,5 ore sull'A1. Da Spalato circa 2 ore.</p>
 
           <h3>Aeroporti</h3>
-          <p>Il più vicino è quello di Zadar, a circa 45 minuti in auto più il traghetto. Quello di Spalato è a circa 2 ore. Possiamo aiutarvi con il percorso e il noleggio auto.</p>
+          <p>Il più vicino è quello di Zadar, a circa 1 ora e mezza compreso il traghetto. Dall'aeroporto di Spalato ci vogliono circa 2 ore e mezza. Possiamo aiutarvi con il percorso e il noleggio auto.</p>
 
           <h3>Nei dintorni</h3>
           <dl class="nearby">
-            <div><dt>Ristorante</dt><dd>Nel villaggio, a piedi</dd></div>
+            <div><dt>Ristorante</dt><dd>Stari Zidi, nel villaggio, a piedi</dd></div>
             <div><dt>Medico e dentista</dt><dd>Nel villaggio</dd></div>
             <div><dt>Supermercato</dt><dd>Mali Pašman, 3 km</dd></div>
             <div><dt>Bancomat</dt><dd>Villaggio di Pašman, 5 km</dd></div>
@@ -375,7 +399,7 @@
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="wrap">
         <h2 id="contact-title">Chiedeteci quello che volete</h2>
-        <p class="contact-lede">Gestiamo personalmente ogni prenotazione e conosciamo bene l'isola. WhatsApp è il modo più rapido per contattarci.</p>
+        <p class="contact-lede">Gestiamo personalmente ogni prenotazione e conosciamo bene l'isola. WhatsApp è il modo più rapido per contattarci. Parliamo croato e inglese.</p>
         <div class="contact-ways">
           <a class="way way-wa" href="https://wa.me/38598830940?text=Ciao%2C%20vorrei%20informazioni%20per%20un%20soggiorno%20a%20Casa%20Siesta." target="_blank" rel="noopener">
             <span class="way-label">WhatsApp</span>
@@ -442,6 +466,6 @@
   ]
 }
   </script>
-  <script src="/script.js?v=6" defer></script>
+  <script src="/script.js?v=7" defer></script>
 </body>
 </html>

@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=6">
+  <link rel="stylesheet" href="/styles.css?v=7">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -89,6 +89,21 @@
         "@type": "LocationFeatureSpecification",
         "name": "Free parking",
         "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Barbecue",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Baby cot",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "High chair",
+        "value": true
       }
     ],
     "checkinTime": "14:00",
@@ -100,7 +115,12 @@
       "longitude": 15.3455
     },
     "hasMap": "https://www.google.com/maps?cid=14389742535623081854",
-    "numberOfRooms": 2
+    "numberOfRooms": 2,
+    "petsAllowed": true,
+    "knowsLanguage": [
+      "hr",
+      "en"
+    ]
   }
   </script>
 </head>
@@ -138,7 +158,7 @@
       <img class="hero-img" src="/img/hero.jpg" alt="Pogled s vidikovca Veliki Bokolj: zelena makija, Pašmanski kanal i kopno pod bijelim oblacima" fetchpriority="high">
       <div class="hero-text">
         <h1 id="hero-title">Casa<br>Siesta</h1>
-        <p class="hero-lede">Dva apartmana za odmor u Neviđanima, ribarskom selu na mirnom otoku Pašmanu u Hrvatskoj. Do plaže je kratka šetnja, a život ovdje teče polako.</p>
+        <p class="hero-lede">Dva apartmana za odmor u Neviđanima, ribarskom selu na mirnom otoku Pašmanu u Hrvatskoj. Plaža je udaljena oko 200 m, a život ovdje teče polako.</p>
         <div class="hero-actions">
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Pozdrav%2C%20zanima%20me%20smje%C5%A1taj%20u%20Casa%20Siesti." target="_blank" rel="noopener">Pišite nam na WhatsApp</a>
           <a class="btn btn-ghost" href="#apartments">Pogledajte apartmane</a>
@@ -163,10 +183,10 @@
         <div class="apt-body">
           <h3 id="mar-title">Apartman Mar</h3>
           <p class="apt-sub">Gornji apartman s krovnom terasom</p>
-          <p>Mar zauzima cijeli gornji kat. Ima dvije spavaće sobe pod kosim krovom, otvorenu kuhinju s blagovaonicom i klimatizacijom, balkon te veliku krovnu terasu s jedrom za hlad, stolom za blagovanje i ležaljkama. S terase pogled seže preko borova do mora.</p>
+          <p>Mar zauzima cijeli gornji kat. Ima dvije spavaće sobe pod kosim krovom, jednu s bračnim krevetom i jednu s dva odvojena kreveta, otvorenu kuhinju s blagovaonicom i klimatizacijom, balkon te veliku krovnu terasu s pergolom, stolom za blagovanje i ležaljkama. S terase pogled seže preko borova do mora.</p>
           <dl class="facts">
             <div><dt>Broj osoba</dt><dd>Do 5</dd></div>
-            <div><dt>Kreveti</dt><dd>Veliki bračni, bračni, kauč na razvlačenje</dd></div>
+            <div><dt>Kreveti</dt><dd>Bračni krevet, dva odvojena kreveta, kauč na razvlačenje</dd></div>
             <div><dt>Vani</dt><dd>Krovna terasa i balkon</dd></div>
             <div><dt>Cijena</dt><dd>Na upit</dd></div>
           </dl>
@@ -185,11 +205,12 @@
         </figure>
         <div class="apt-body">
           <h3 id="brisa-title">Apartman Brisa</h3>
-          <p class="apt-sub">Manji apartman</p>
-          <p>Brisa je kompaktan i praktičan apartman za par ili manju obitelj. Dobar je izbor ako ćete dane provoditi na plaži ili na brodu i želite jednostavnu, udobnu bazu.</p>
+          <p class="apt-sub">Manji apartman, u prizemlju</p>
+          <p>Brisa se nalazi u prizemlju i ima jednu spavaću sobu, dnevni boravak s potpuno novom kuhinjom, kupaonicu i zaseban WC. Odgovara paru ili manjoj obitelji, a dobar je izbor ako ćete dane provoditi na plaži ili na brodu i želite jednostavnu, udobnu bazu.</p>
           <dl class="facts">
             <div><dt>Broj osoba</dt><dd>Do 4</dd></div>
-            <div><dt>Kreveti</dt><dd>Krevet na kat, kauč na razvlačenje</dd></div>
+            <div><dt>Kreveti</dt><dd>Krevet na kat, kauč koji se razvlači u bračni krevet</dd></div>
+            <div><dt>Vani</dt><dd>Vrt</dd></div>
             <div><dt>Cijena</dt><dd>Na upit</dd></div>
           </dl>
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Pozdrav%2C%20zanima%20me%20apartman%20Brisa." target="_blank" rel="noopener">Pitajte za Brisu</a>
@@ -208,9 +229,12 @@
               <li>Besplatno parkiralište uz kuću</li>
               <li>Prijavu od 14:00</li>
               <li>Odjavu do 10:00</li>
-              <li>Minimalni boravak od 7 noćenja</li>
+              <li>Roštilj u vrtu</li>
+              <li>Mogućnost boravka s kućnim ljubimcima</li>
+              <li>Dječji krevetić i hranilicu</li>
             </ul>
             <p class="included"><strong>Uključeno u cijenu:</strong> posteljina, ručnici, boravišna pristojba i završno čišćenje. Bez dodatnih troškova.</p>
+            <p class="season">Otvoreno tijekom ljetne sezone. Minimalni boravak je 7 noćenja, a dolazak je moguć bilo koji dan.</p>
             <p class="stars"><span aria-hidden="true">★★★</span> Oba apartmana službeno su kategorizirana s tri zvjezdice.</p>
           </div>
         </div>
@@ -235,7 +259,7 @@
         <h2 id="island-title" class="section-title">Pašman, otok bez žurbe</h2>
         <div class="island-intro">
           <p>Pašman se nalazi u zadarskom arhipelagu, s Ugljanom ga povezuje most, a od kopna je udaljen kratku vožnju trajektom. To je otok bistrog mora, borovih šuma, maslinika i malih dalmatinskih sela, bez gužvi kakve imaju poznatiji otoci.</p>
-          <p>Neviđane su na istočnoj strani otoka. Imaju živu luku, restoran sa svježom ribom, plodovima mora i dalmatinskim jelima te malu galeriju.</p>
+          <p>Neviđane su na istočnoj strani otoka. Imaju živu luku, malu galeriju i naš omiljeni restoran Stari Zidi, u kojem se poslužuju svježa riba, plodovi mora i dalmatinska jela.</p>
         </div>
       </div>
 
@@ -251,7 +275,7 @@
           <img src="/img/island/beach.jpg" alt="Djeca se igraju u bistrom, plitkom moru na mjesnoj plaži" loading="lazy">
           <div>
             <h3>Plaža</h3>
-            <p>Mjesna plaža udaljena je od kuće kratku šetnju. More je bistro i plitko, odlično za kupanje i ronjenje s maskom, a gužve su rijetke.</p>
+            <p>Mjesna plaža udaljena je od kuće oko 200 m. More je bistro i plitko, odlično za kupanje i ronjenje s maskom, a gužve su rijetke.</p>
           </div>
         </article>
         <article class="thing">
@@ -306,7 +330,7 @@
             <ul class="trip-list">
               <li>
                 <a href="https://zadar.travel/" target="_blank" rel="noopener">Zadar</a>
-                <span class="trip-meta">Oko 30 min od Biograda ili trajektom s Ugljana</span>
+                <span class="trip-meta">Oko 40 min od Biograda ili trajektom s Ugljana</span>
                 <p>Rimski forum, Morske orgulje i Pozdrav Suncu na rivi te zalazak sunca za koji je Alfred Hitchcock navodno rekao da je najljepši na svijetu.</p>
               </li>
               <li>
@@ -347,17 +371,17 @@
           <p class="address">Put Tratice 6, 23264 Neviđane, Pašman, Hrvatska</p>
 
           <h3>Iz Zadra</h3>
-          <p>Jadrolinijinim trajektom iz zadarske luke doplovite do Preka na Ugljanu (oko 25 minuta, polasci su česti). Prijeđite most na Pašman i vozite prema jugu do Neviđana, za što Vam treba oko 20 minuta.</p>
+          <p>Jadrolinijinim trajektom iz zadarske luke doplovite do Preka na Ugljanu (oko 25 minuta, polasci su česti). Prijeđite most na Pašman i vozite prema jugu do Neviđana. Vožnja od Preka traje oko 30 minuta.</p>
 
           <h3>Iz Biograda na Moru</h3>
-          <p>Trajektom doplovite do Tkona na južnom kraju Pašmana (oko 25 minuta), a zatim vozite 10 km prema sjeveru do Neviđana. Ako dolazite automobilom iz Zagreba, do Biograda Vam treba oko 3,5 sata autocestom A1. Iz Splita je to oko 1,5 sata.</p>
+          <p>Trajektom doplovite do Tkona na južnom kraju Pašmana (oko 25 minuta), a zatim vozite 10 km prema sjeveru do Neviđana (oko 15 minuta). Ako dolazite automobilom iz Zagreba, do Biograda Vam treba oko 3,5 sata autocestom A1. Iz Splita je to oko 2 sata.</p>
 
           <h3>Zračne luke</h3>
-          <p>Najbliža je zračna luka Zadar, oko 45 minuta vožnje automobilom uz trajekt. Split je udaljen oko 2 sata. Rado ćemo Vam pomoći oko rute i najma automobila.</p>
+          <p>Najbliža je zračna luka Zadar, udaljena oko 1½ sat zajedno s trajektom. Od zračne luke Split putujete oko 2½ sata. Rado ćemo Vam pomoći oko rute i najma automobila.</p>
 
           <h3>U blizini</h3>
           <dl class="nearby">
-            <div><dt>Restoran</dt><dd>U mjestu, pješice</dd></div>
+            <div><dt>Restoran</dt><dd>Stari Zidi, u mjestu, pješice</dd></div>
             <div><dt>Liječnik i stomatolog</dt><dd>U mjestu</dd></div>
             <div><dt>Supermarket</dt><dd>Mali Pašman, 3 km</dd></div>
             <div><dt>Bankomat</dt><dd>Mjesto Pašman, 5 km</dd></div>
@@ -375,7 +399,7 @@
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="wrap">
         <h2 id="contact-title">Pitajte nas bilo što</h2>
-        <p class="contact-lede">Sve rezervacije vodimo sami i dobro poznajemo otok. Najbrže ćete nas dobiti na WhatsAppu.</p>
+        <p class="contact-lede">Sve rezervacije vodimo sami i dobro poznajemo otok. Najbrže ćete nas dobiti na WhatsAppu. Govorimo hrvatski i engleski.</p>
         <div class="contact-ways">
           <a class="way way-wa" href="https://wa.me/38598830940?text=Pozdrav%2C%20zanima%20me%20smje%C5%A1taj%20u%20Casa%20Siesti." target="_blank" rel="noopener">
             <span class="way-label">WhatsApp</span>
@@ -442,6 +466,6 @@
   ]
 }
   </script>
-  <script src="/script.js?v=6" defer></script>
+  <script src="/script.js?v=7" defer></script>
 </body>
 </html>

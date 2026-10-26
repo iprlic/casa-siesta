@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=6">
+  <link rel="stylesheet" href="/styles.css?v=7">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -89,6 +89,21 @@
         "@type": "LocationFeatureSpecification",
         "name": "Free parking",
         "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Barbecue",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Baby cot",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "High chair",
+        "value": true
       }
     ],
     "checkinTime": "14:00",
@@ -100,7 +115,12 @@
       "longitude": 15.3455
     },
     "hasMap": "https://www.google.com/maps?cid=14389742535623081854",
-    "numberOfRooms": 2
+    "numberOfRooms": 2,
+    "petsAllowed": true,
+    "knowsLanguage": [
+      "hr",
+      "en"
+    ]
   }
   </script>
 </head>
@@ -138,7 +158,7 @@
       <img class="hero-img" src="/img/hero.jpg" alt="Výhled z vyhlídky Veliki Bokolj: zelená macchie, Pašmanský průliv a pevnina pod bílými mraky" fetchpriority="high">
       <div class="hero-text">
         <h1 id="hero-title">Casa<br>Siesta</h1>
-        <p class="hero-lede">Dva prázdninové apartmány v Neviđanech, rybářské vesnici na klidném ostrově Pašman v Chorvatsku. Na pláž je to kousek pěšky a život tu plyne pomalu.</p>
+        <p class="hero-lede">Dva prázdninové apartmány v Neviđanech, rybářské vesnici na klidném ostrově Pašman v Chorvatsku. Na pláž je to asi 200 m a život tu plyne pomalu.</p>
         <div class="hero-actions">
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20dotaz%20na%20ubytov%C3%A1n%C3%AD%20v%20Casa%20Siesta." target="_blank" rel="noopener">Napište nám na WhatsApp</a>
           <a class="btn btn-ghost" href="#apartments">Prohlédnout apartmány</a>
@@ -163,10 +183,10 @@
         <div class="apt-body">
           <h3 id="mar-title">Apartmán Mar</h3>
           <p class="apt-sub">Horní apartmán se střešní terasou</p>
-          <p>Mar zabírá celé horní patro. Má dvě ložnice pod šikmou střechou, otevřenou kuchyň s jídelnou a klimatizací, balkon a velkou střešní terasu se stínicí plachtou, jídelním stolem a lehátky. Z terasy je výhled přes borovice na moře.</p>
+          <p>Mar zabírá celé horní patro. Má dvě ložnice pod šikmou střechou, jednu s manželskou postelí a druhou se dvěma samostatnými lůžky, otevřenou kuchyň s jídelnou a klimatizací, balkon a velkou střešní terasu s pergolou, jídelním stolem a lehátky. Z terasy je výhled přes borovice na moře.</p>
           <dl class="facts">
             <div><dt>Počet osob</dt><dd>Až 5</dd></div>
-            <div><dt>Postele</dt><dd>Velká manželská postel, manželská postel, rozkládací pohovka</dd></div>
+            <div><dt>Postele</dt><dd>Manželská postel, dvě samostatná lůžka, rozkládací pohovka</dd></div>
             <div><dt>Venku</dt><dd>Střešní terasa a balkon</dd></div>
             <div><dt>Cena</dt><dd>Na dotaz</dd></div>
           </dl>
@@ -185,11 +205,12 @@
         </figure>
         <div class="apt-body">
           <h3 id="brisa-title">Apartmán Brisa</h3>
-          <p class="apt-sub">Menší apartmán</p>
-          <p>Brisa je kompaktní, praktický apartmán pro pár nebo malou rodinu. Hodí se, pokud budete trávit dny na pláži nebo na lodi a chcete jednoduché a pohodlné zázemí.</p>
+          <p class="apt-sub">Menší apartmán v přízemí</p>
+          <p>Brisa je v přízemí a má jednu ložnici, obývací pokoj se zbrusu novou kuchyní, koupelnu a samostatné WC. Je vhodná pro pár nebo malou rodinu a hodí se, pokud budete trávit dny na pláži nebo na lodi a chcete jednoduché a pohodlné zázemí.</p>
           <dl class="facts">
             <div><dt>Počet osob</dt><dd>Až 4</dd></div>
-            <div><dt>Postele</dt><dd>Patrová postel, rozkládací pohovka</dd></div>
+            <div><dt>Postele</dt><dd>Patrová postel, pohovka rozkládací na dvojlůžko</dd></div>
+            <div><dt>Venku</dt><dd>Zahrada</dd></div>
             <div><dt>Cena</dt><dd>Na dotaz</dd></div>
           </dl>
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20dotaz%20na%20apartm%C3%A1n%20Brisa." target="_blank" rel="noopener">Zeptejte se na Brisu</a>
@@ -208,9 +229,12 @@
               <li>Parkování zdarma u domu</li>
               <li>Příjezd od 14:00</li>
               <li>Odjezd do 10:00</li>
-              <li>Minimální pobyt 7 nocí</li>
+              <li>Gril na zahradě</li>
+              <li>Domácí mazlíčci vítáni</li>
+              <li>Dětská postýlka a jídelní židlička</li>
             </ul>
             <p class="included"><strong>V ceně:</strong> ložní prádlo, ručníky, turistická taxa a závěrečný úklid. Žádné příplatky.</p>
+            <p class="season">Otevřeno v letní sezóně. Minimální pobyt je 7 nocí a přijet můžete kterýkoli den.</p>
             <p class="stars"><span aria-hidden="true">★★★</span> Oba apartmány mají oficiální hodnocení tři hvězdičky.</p>
           </div>
         </div>
@@ -235,7 +259,7 @@
         <h2 id="island-title" class="section-title">Pašman, ostrov, kde se nespěchá</h2>
         <div class="island-intro">
           <p>Pašman leží v zadarském souostroví, s Ugljanem ho spojuje most a z pevniny je to kousek trajektem. Je to ostrov průzračné vody, borových lesů, olivových hájů a malých dalmatských vesnic, bez davů, jaké znáte ze známějších ostrovů.</p>
-          <p>Neviđane leží na východní straně ostrova. Je tu fungující přístav, restaurace s čerstvými mořskými plody a dalmatskými jídly a malá galerie.</p>
+          <p>Neviđane leží na východní straně ostrova. Je tu fungující přístav, malá galerie a naše oblíbená restaurace Stari Zidi s čerstvými mořskými plody a dalmatskými jídly.</p>
         </div>
       </div>
 
@@ -251,7 +275,7 @@
           <img src="/img/island/beach.jpg" alt="Děti si hrají v průzračné mělké vodě na vesnické pláži" loading="lazy">
           <div>
             <h3>Pláž</h3>
-            <p>Vesnická pláž je kousek pěšky od domu. Voda je průzračná a mělká, ideální na koupání i šnorchlování, a plno tu bývá jen málokdy.</p>
+            <p>Vesnická pláž je asi 200 m od domu. Voda je průzračná a mělká, ideální na koupání i šnorchlování, a plno tu bývá jen málokdy.</p>
           </div>
         </article>
         <article class="thing">
@@ -306,7 +330,7 @@
             <ul class="trip-list">
               <li>
                 <a href="https://zadar.travel/" target="_blank" rel="noopener">Zadar</a>
-                <span class="trip-meta">Asi 30 min z Biogradu, nebo trajektem z Ugljanu</span>
+                <span class="trip-meta">Asi 40 min z Biogradu, nebo trajektem z Ugljanu</span>
                 <p>Římské fórum, Mořské varhany a Pozdrav slunci na nábřeží a západ slunce, který prý Alfred Hitchcock označil za nejkrásnější na světě.</p>
               </li>
               <li>
@@ -347,17 +371,17 @@
           <p class="address">Put Tratice 6, 23264 Neviđane, Pašman, Chorvatsko</p>
 
           <h3>Ze Zadaru</h3>
-          <p>Ze zadarského přístavu jeďte trajektem Jadrolinija do Preka na Ugljanu (asi 25 minut, spoje jezdí často). Přejeďte most na Pašman a pokračujte na jih do Neviđan, cesta trvá asi 20 minut.</p>
+          <p>Ze zadarského přístavu jeďte trajektem Jadrolinija do Preka na Ugljanu (asi 25 minut, spoje jezdí často). Přejeďte most na Pašman a pokračujte na jih do Neviđan. Z Preka to autem trvá asi 30 minut.</p>
 
           <h3>Z Biogradu na Moru</h3>
-          <p>Jeďte trajektem do Tkonu na jižním cípu Pašmanu (asi 25 minut) a pak 10 km na sever do Neviđan. Autem ze Záhřebu je to do Biogradu po dálnici A1 asi 3,5 hodiny, ze Splitu asi 1,5 hodiny.</p>
+          <p>Jeďte trajektem do Tkonu na jižním cípu Pašmanu (asi 25 minut) a pak 10 km na sever do Neviđan (asi 15 minut). Autem ze Záhřebu je to do Biogradu po dálnici A1 asi 3,5 hodiny, ze Splitu asi 2 hodiny.</p>
 
           <h3>Letiště</h3>
-          <p>Nejblíže je Zadar, asi 45 minut autem plus trajekt. Split je vzdálený asi 2 hodiny. Rádi vám pomůžeme s trasou i s půjčením auta.</p>
+          <p>Nejblíže je Zadar, asi 1½ hodiny cesty včetně trajektu. Z letiště ve Splitu je to asi 2½ hodiny. Rádi vám pomůžeme s trasou i s půjčením auta.</p>
 
           <h3>V okolí</h3>
           <dl class="nearby">
-            <div><dt>Restaurace</dt><dd>Ve vesnici, pěšky</dd></div>
+            <div><dt>Restaurace</dt><dd>Stari Zidi, ve vesnici, pěšky</dd></div>
             <div><dt>Lékař a zubař</dt><dd>Ve vesnici</dd></div>
             <div><dt>Supermarket</dt><dd>Mali Pašman, 3 km</dd></div>
             <div><dt>Bankomat</dt><dd>Obec Pašman, 5 km</dd></div>
@@ -375,7 +399,7 @@
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="wrap">
         <h2 id="contact-title">Zeptejte se nás na cokoli</h2>
-        <p class="contact-lede">Všechny rezervace vyřizujeme sami a ostrov dobře známe. Nejrychleji nás zastihnete přes WhatsApp.</p>
+        <p class="contact-lede">Všechny rezervace vyřizujeme sami a ostrov dobře známe. Nejrychleji nás zastihnete přes WhatsApp. Mluvíme chorvatsky a anglicky.</p>
         <div class="contact-ways">
           <a class="way way-wa" href="https://wa.me/38598830940?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20dotaz%20na%20ubytov%C3%A1n%C3%AD%20v%20Casa%20Siesta." target="_blank" rel="noopener">
             <span class="way-label">WhatsApp</span>
@@ -442,6 +466,6 @@
   ]
 }
   </script>
-  <script src="/script.js?v=6" defer></script>
+  <script src="/script.js?v=7" defer></script>
 </body>
 </html>

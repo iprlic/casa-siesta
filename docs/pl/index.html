@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=6">
+  <link rel="stylesheet" href="/styles.css?v=7">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -89,6 +89,21 @@
         "@type": "LocationFeatureSpecification",
         "name": "Free parking",
         "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Barbecue",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Baby cot",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "High chair",
+        "value": true
       }
     ],
     "checkinTime": "14:00",
@@ -100,7 +115,12 @@
       "longitude": 15.3455
     },
     "hasMap": "https://www.google.com/maps?cid=14389742535623081854",
-    "numberOfRooms": 2
+    "numberOfRooms": 2,
+    "petsAllowed": true,
+    "knowsLanguage": [
+      "hr",
+      "en"
+    ]
   }
   </script>
 </head>
@@ -138,7 +158,7 @@
       <img class="hero-img" src="/img/hero.jpg" alt="Widok z punktu widokowego Veliki Bokolj: zielona makia, kanał Pašmański i stały ląd pod białymi chmurami" fetchpriority="high">
       <div class="hero-text">
         <h1 id="hero-title">Casa<br>Siesta</h1>
-        <p class="hero-lede">Dwa apartamenty wakacyjne w Neviđane, rybackiej wsi na spokojnej wyspie Pašman w Chorwacji. Na plażę jest kilka minut spacerem, a życie płynie tu powoli.</p>
+        <p class="hero-lede">Dwa apartamenty wakacyjne w Neviđane, rybackiej wsi na spokojnej wyspie Pašman w Chorwacji. Do plaży jest około 200 m, a życie płynie tu powoli.</p>
         <div class="hero-actions">
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Dzie%C5%84%20dobry%2C%20mam%20pytanie%20dotycz%C4%85ce%20pobytu%20w%20Casa%20Siesta." target="_blank" rel="noopener">Napisz do nas na WhatsAppie</a>
           <a class="btn btn-ghost" href="#apartments">Zobacz apartamenty</a>
@@ -163,10 +183,10 @@
         <div class="apt-body">
           <h3 id="mar-title">Apartament Mar</h3>
           <p class="apt-sub">Górny apartament z tarasem na dachu</p>
-          <p>Mar zajmuje całe najwyższe piętro. Ma dwie sypialnie pod skośnym dachem, otwartą kuchnię z jadalnią i klimatyzacją, balkon oraz duży taras na dachu z żaglem przeciwsłonecznym, stołem i leżakami. Z tarasu widać morze ponad koronami sosen.</p>
+          <p>Mar zajmuje całe najwyższe piętro. Ma dwie sypialnie pod skośnym dachem, jedną z łóżkiem podwójnym, a drugą z dwoma łóżkami pojedynczymi, otwartą kuchnię z jadalnią i klimatyzacją, balkon oraz duży taras na dachu z pergolą, stołem i leżakami. Z tarasu widać morze ponad koronami sosen.</p>
           <dl class="facts">
             <div><dt>Liczba osób</dt><dd>Do 5</dd></div>
-            <div><dt>Łóżka</dt><dd>Łóżko queen size, łóżko podwójne, sofa rozkładana</dd></div>
+            <div><dt>Łóżka</dt><dd>Łóżko podwójne, dwa łóżka pojedyncze, sofa rozkładana</dd></div>
             <div><dt>Na zewnątrz</dt><dd>Taras na dachu i balkon</dd></div>
             <div><dt>Cena</dt><dd>Na zapytanie</dd></div>
           </dl>
@@ -185,11 +205,12 @@
         </figure>
         <div class="apt-body">
           <h3 id="brisa-title">Apartament Brisa</h3>
-          <p class="apt-sub">Mniejszy apartament</p>
-          <p>Brisa to kompaktowy, praktyczny apartament dla pary lub małej rodziny. To dobry wybór, jeśli dni spędzasz na plaży albo na łodzi i szukasz prostej, wygodnej bazy.</p>
+          <p class="apt-sub">Mniejszy apartament, na parterze</p>
+          <p>Brisa znajduje się na parterze. Ma jedną sypialnię, salon z zupełnie nową kuchnią, łazienkę i osobną toaletę. Sprawdzi się dla pary lub małej rodziny i jest dobrym wyborem, jeśli dni spędzasz na plaży albo na łodzi i szukasz prostej, wygodnej bazy.</p>
           <dl class="facts">
             <div><dt>Liczba osób</dt><dd>Do 4</dd></div>
-            <div><dt>Łóżka</dt><dd>Łóżko piętrowe, sofa rozkładana</dd></div>
+            <div><dt>Łóżka</dt><dd>Łóżko piętrowe, sofa rozkładana w łóżko podwójne</dd></div>
+            <div><dt>Na zewnątrz</dt><dd>Ogród</dd></div>
             <div><dt>Cena</dt><dd>Na zapytanie</dd></div>
           </dl>
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Dzie%C5%84%20dobry%2C%20mam%20pytanie%20dotycz%C4%85ce%20Apartamentu%20Brisa." target="_blank" rel="noopener">Zapytaj o Brisę</a>
@@ -208,9 +229,12 @@
               <li>Bezpłatny parking przy domu</li>
               <li>Zameldowanie od 14:00</li>
               <li>Wymeldowanie do 10:00</li>
-              <li>Minimalny pobyt: 7 nocy</li>
+              <li>Grill w ogrodzie</li>
+              <li>Zwierzęta mile widziane</li>
+              <li>Łóżeczko dziecięce i krzesełko do karmienia</li>
             </ul>
             <p class="included"><strong>W cenie:</strong> pościel, ręczniki, opłata klimatyczna i sprzątanie końcowe. Bez dodatkowych opłat.</p>
+            <p class="season">Apartamenty są dostępne w sezonie letnim. Minimalny pobyt to 7 nocy, a przyjechać możesz w dowolny dzień.</p>
             <p class="stars"><span aria-hidden="true">★★★</span> Oba apartamenty mają oficjalną kategorię trzech gwiazdek.</p>
           </div>
         </div>
@@ -235,7 +259,7 @@
         <h2 id="island-title" class="section-title">Pašman, wyspa bez pośpiechu</h2>
         <div class="island-intro">
           <p>Pašman leży w archipelagu zadarskim. Z Ugljanem łączy go most, a ze stałego lądu dopływa się tu krótkim promem. To wyspa czystej wody, sosnowych lasów, gajów oliwnych i małych dalmatyńskich wiosek, bez tłumów znanych z popularniejszych wysp.</p>
-          <p>Neviđane leży po wschodniej stronie wyspy. Jest tu czynny port, restauracja serwująca świeże owoce morza i dania kuchni dalmatyńskiej oraz mała galeria.</p>
+          <p>Neviđane leży po wschodniej stronie wyspy. Jest tu czynny port, mała galeria i nasza ulubiona restauracja Stari Zidi, która serwuje świeże owoce morza i dania kuchni dalmatyńskiej.</p>
         </div>
       </div>
 
@@ -251,7 +275,7 @@
           <img src="/img/island/beach.jpg" alt="Dzieci bawią się w przejrzystej, płytkiej wodzie na wiejskiej plaży" loading="lazy">
           <div>
             <h3>Plaża</h3>
-            <p>Plaża w wiosce jest kilka minut spacerem od domu. Woda jest czysta i płytka, dobra do pływania i snorkelingu, a tłoczno bywa tu rzadko.</p>
+            <p>Plaża w wiosce jest około 200 m od domu. Woda jest czysta i płytka, dobra do pływania i snorkelingu, a tłoczno bywa tu rzadko.</p>
           </div>
         </article>
         <article class="thing">
@@ -306,7 +330,7 @@
             <ul class="trip-list">
               <li>
                 <a href="https://zadar.travel/" target="_blank" rel="noopener">Zadar</a>
-                <span class="trip-meta">Około 30 min od Biogradu albo promem z Ugljanu</span>
+                <span class="trip-meta">Około 40 min od Biogradu albo promem z Ugljanu</span>
                 <p>Forum rzymskie, Organy Morskie i Pozdrowienie dla Słońca na nabrzeżu oraz zachód słońca, który Alfred Hitchcock miał podobno nazwać najpiękniejszym na świecie.</p>
               </li>
               <li>
@@ -347,17 +371,17 @@
           <p class="address">Put Tratice 6, 23264 Neviđane, Pašman, Chorwacja</p>
 
           <h3>Z Zadaru</h3>
-          <p>Z portu w Zadarze płynie prom Jadrolinii do Preko na Ugljanie (około 25 minut, kursy są częste). Następnie przejedź mostem na Pašman i dalej na południe do Neviđane, co zajmuje około 20 minut.</p>
+          <p>Z portu w Zadarze płynie prom Jadrolinii do Preko na Ugljanie (około 25 minut, kursy są częste). Następnie przejedź mostem na Pašman i dalej na południe do Neviđane. Jazda z Preko trwa około 30 minut.</p>
 
           <h3>Z Biogradu na Moru</h3>
-          <p>Prom płynie do Tkonu na południowym krańcu Pašmanu (około 25 minut), skąd jedzie się 10 km na północ do Neviđane. Samochodem z Zagrzebia do Biogradu jest około 3,5 godziny autostradą A1, a ze Splitu około 1,5 godziny.</p>
+          <p>Prom płynie do Tkonu na południowym krańcu Pašmanu (około 25 minut), skąd jedzie się 10 km na północ do Neviđane (około 15 minut). Samochodem z Zagrzebia do Biogradu jest około 3,5 godziny autostradą A1, a ze Splitu około 2 godzin.</p>
 
           <h3>Lotniska</h3>
-          <p>Najbliżej jest Zadar, około 45 minut samochodem plus prom. Do Splitu jest około 2 godzin. Chętnie pomożemy z trasą i wynajmem samochodu.</p>
+          <p>Najbliżej jest Zadar, około 1,5 godziny drogi razem z promem. Z lotniska w Splicie jedzie się około 2,5 godziny. Chętnie pomożemy z trasą i wynajmem samochodu.</p>
 
           <h3>W pobliżu</h3>
           <dl class="nearby">
-            <div><dt>Restauracja</dt><dd>W wiosce, pieszo</dd></div>
+            <div><dt>Restauracja</dt><dd>Stari Zidi, w wiosce, pieszo</dd></div>
             <div><dt>Lekarz i dentysta</dt><dd>W wiosce</dd></div>
             <div><dt>Supermarket</dt><dd>Mali Pašman, 3 km</dd></div>
             <div><dt>Bankomat</dt><dd>Miejscowość Pašman, 5 km</dd></div>
@@ -375,7 +399,7 @@
     <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="wrap">
         <h2 id="contact-title">Zapytaj nas o wszystko</h2>
-        <p class="contact-lede">Wszystkimi rezerwacjami zajmujemy się sami i dobrze znamy wyspę. Najszybciej skontaktujesz się z nami przez WhatsApp.</p>
+        <p class="contact-lede">Wszystkimi rezerwacjami zajmujemy się sami i dobrze znamy wyspę. Najszybciej skontaktujesz się z nami przez WhatsApp. Mówimy po chorwacku i po angielsku.</p>
         <div class="contact-ways">
           <a class="way way-wa" href="https://wa.me/38598830940?text=Dzie%C5%84%20dobry%2C%20mam%20pytanie%20dotycz%C4%85ce%20pobytu%20w%20Casa%20Siesta." target="_blank" rel="noopener">
             <span class="way-label">WhatsApp</span>
@@ -442,6 +466,6 @@
   ]
 }
   </script>
-  <script src="/script.js?v=6" defer></script>
+  <script src="/script.js?v=7" defer></script>
 </body>
 </html>
