@@ -31,7 +31,7 @@ Static one-page site for Casa Siesta, two family-run holiday apartments (Mar and
 - Ferries (checked on jadrolinija.hr, 2026-10-26): the Zadar–Preko car ferry leaves from Gaženica port, 25 min; the city-harbour line 409 is foot passengers only. Biograd–Tkon takes 20 min.
 - Travel times were checked with OSRM (OpenStreetMap routing) on 2026-10-26: Preko ferry to house ~30 min, Tkon ferry to house ~15 min, Zadar airport ~1.5 h incl. ferry, Split airport ~2.5 h incl. ferry.
 - Both apartments: air conditioning, Wi-Fi, kitchen with dishwasher, washing machine, free parking.
-- The price includes bed linen, towels, tourist tax and final cleaning. Prices are not set yet ("On request").
+- Prices (same for Mar and Brisa, per night, whole apartment): €120 from 15 July to 15 August, €100 at other times. The price includes bed linen, towels, tourist tax and final cleaning.
 - Doctor and dentist in Neviđane. Restaurant in the village. Nearest supermarket in Mali Pašman (about 3 km). ATM in Pašman village (5 km). Pharmacy and ferry to Biograd in Tkon (10 km).
 
 ## Preview and publish

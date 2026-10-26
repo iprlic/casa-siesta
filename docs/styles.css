@@ -92,7 +92,8 @@ a { color: inherit; }
 .langs a { display: flex; align-items: center; gap: .6rem; padding: .5rem .75rem; border-radius: 5px; text-decoration: none; font: 500 .95rem/1.2 var(--sans); color: var(--ink); }.langs a:hover { background: var(--stone); }
 .langs a[aria-current] { color: var(--sea); font-weight: 700; }
 
-.included { margin: 1.25rem 0 .5rem; font-size: 1.1rem; }
+.prices { margin: 1.25rem 0 .5rem; font-size: 1.1rem; }
+.included { margin: 0 0 .5rem; font-size: 1.1rem; }
 .included strong { font-family: var(--sans); font-weight: 600; }
 .season { margin: 0 0 .5rem; font-size: 1.05rem; }
 .stars { margin: 0; font-size: 1.05rem; color: var(--pine); }
