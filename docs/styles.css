@@ -284,6 +284,17 @@ a { color: inherit; }
 .thing-wide h3 { font-size: 2rem; }
 .thing-wide p { font-size: 1.2rem; }
 
+.climate { margin-top: clamp(3.5rem, 7vw, 6rem); }
+.climate-title { font-size: clamp(2rem, 3.5vw, 2.75rem); font-weight: 700; color: var(--awning); margin-bottom: 1.5rem; }
+.climate-scroll { overflow-x: auto; }
+.climate table { width: 100%; min-width: 36rem; border-collapse: collapse; font-family: var(--sans); }
+.climate th, .climate td { padding: .8rem 1rem; text-align: left; border-bottom: 1px solid rgba(255, 255, 255, .2); }
+.climate thead th { font-weight: 500; font-size: .9rem; color: #d8e6e8; vertical-align: bottom; }
+.climate tbody th { font-weight: 700; color: var(--white); }
+.climate td { font-size: 1.1rem; color: var(--white); font-variant-numeric: tabular-nums; }
+.climate-source { margin: 1rem 0 0; font-size: .9rem; color: #9fbcc1; max-width: 48rem; }
+.climate-source a { color: inherit; }
+
 .trips {
   margin-top: clamp(3.5rem, 7vw, 6rem);
   padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, .3);
