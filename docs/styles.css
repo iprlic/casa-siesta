@@ -240,6 +240,22 @@ a { color: inherit; }
   background: var(--white);
 }
 
+/* House and garden */
+
+.garden {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 2rem;
+  padding-top: 2rem; border-top: 2px solid var(--sea);
+}
+.garden h3 { font-size: 1.5rem; font-weight: 700; color: var(--sea); }
+.garden p { max-width: 40rem; margin-bottom: 1.5rem; }
+.garden-photos {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: .5rem; aspect-ratio: 2 / 1;
+}
+.garden-photos img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; }
+.garden-photos .gp-main { grid-column: span 2; grid-row: span 2; }
+
 /* Island */
 
 .island { background: var(--sea); color: var(--white); padding: clamp(4rem, 9vw, 8rem) 0; }
@@ -370,7 +386,7 @@ a { color: inherit; }
 
   .apt, .apt-flip { grid-template-columns: 1fr; }
   .apt-flip .apt-single { order: 0; }
-  .both, .island-head, .getting-grid { grid-template-columns: 1fr; }
+  .both, .garden, .island-head, .getting-grid { grid-template-columns: 1fr; }
   .things { grid-template-columns: 1fr 1fr; }
   .thing-wide { grid-column: span 2; }
   .contact-ways { grid-template-columns: 1fr; }
@@ -390,6 +406,9 @@ a { color: inherit; }
   .g-main { aspect-ratio: 4 / 3; }
   .facts, .nearby { grid-template-columns: 1fr; }
   .trip-group:last-child .trip-list { grid-template-columns: 1fr; }
+  .garden-photos { grid-template-columns: 1fr 1fr; grid-template-rows: none; aspect-ratio: auto; }
+  .garden-photos img { aspect-ratio: 1; }
+  .garden-photos .gp-main { grid-row: auto; aspect-ratio: 4 / 3; }
   .lightbox[open] { grid-template-columns: 2.5rem 1fr 2.5rem; }
   .langs summary span { display: none; }
 }
