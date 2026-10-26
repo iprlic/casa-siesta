@@ -188,7 +188,7 @@ a { color: inherit; }
   padding: 0 var(--gutter);
 }
 .apt-flip { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
-.apt-flip .apt-single { order: 2; }
+.apt:not(.apt-flip) > .apt-gallery { order: -1; }
 
 .apt-body h3 {
   font-size: clamp(2rem, 3.5vw, 2.75rem);
@@ -404,7 +404,9 @@ a { color: inherit; }
   .top nav {
     display: flex; order: 5; flex-basis: 100%; margin: 0; gap: 1.25rem;
     overflow-x: auto; white-space: nowrap; scrollbar-width: none;
+    padding: .3rem .3rem .35rem; margin: -.3rem -.3rem 0;
   }
+  .top nav a:focus-visible { outline-offset: 1px; }
   .top nav::-webkit-scrollbar { display: none; }
   .top nav a { font-size: .92rem; padding: .15rem 0; }
   .top { gap: .6rem; }
@@ -417,8 +419,7 @@ a { color: inherit; }
   .hero h1 { margin: -.3em 0 1.5rem; margin-right: 0; font-size: clamp(5rem, 24vw, 10rem); }
 
   .apt, .apt-flip { grid-template-columns: 1fr; }
-  .apt-flip .apt-single { order: 0; }
-  .apt .apt-body { order: -1; }
+  .apt:not(.apt-flip) > .apt-gallery { order: 0; }
   .both, .garden, .island-head, .getting-grid { grid-template-columns: 1fr; }
   .things { grid-template-columns: 1fr 1fr; }
   .thing-wide { grid-column: span 2; }
@@ -446,7 +447,7 @@ a { color: inherit; }
     padding: .85rem 1.3rem; border-radius: 999px; margin-bottom: 1.5rem;
   }
   .trips-details > summary::-webkit-details-marker { display: none; }
-  .trips-details[open] > summary { display: none; }
+  .trips-details:not([open]) .when-open, .trips-details[open] .when-closed { display: none; }
   .facts, .nearby { grid-template-columns: 1fr; }
   .trip-group:last-child .trip-list { grid-template-columns: 1fr; }
   .garden-photos { grid-template-columns: 1fr 1fr; grid-template-rows: none; aspect-ratio: auto; }

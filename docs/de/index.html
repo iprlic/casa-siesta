@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=10">
+  <link rel="stylesheet" href="/styles.css?v=11">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -108,14 +108,12 @@
     ],
     "checkinTime": "14:00",
     "checkoutTime": "10:00",
-    "inLanguage": "de",
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 43.9771,
       "longitude": 15.3455
     },
     "hasMap": "https://www.google.com/maps?cid=14389742535623081854",
-    "numberOfRooms": 2,
     "petsAllowed": true,
     "knowsLanguage": [
       "hr",
@@ -180,13 +178,6 @@
       </div>
 
       <article class="apt" aria-labelledby="mar-title">
-        <div class="apt-gallery" data-gallery="mar">
-          <button class="g g-main" data-index="0"><img src="/img/mar/01.jpg" alt="Dachterrasse mit Meerblick" loading="lazy"></button>
-          <button class="g" data-index="1"><img src="/img/mar/02-sm.jpg" alt="Schattige Terrasse mit Esstisch" loading="lazy"></button>
-          <button class="g" data-index="5"><img src="/img/mar/06-sm.jpg" alt="Küche" loading="lazy"></button>
-          <button class="g" data-index="10"><img src="/img/mar/11-sm.jpg" alt="Schlafzimmer mit Doppelbett" loading="lazy"></button>
-          <button class="g g-more" data-index="13"><img src="/img/mar/14-sm.jpg" alt="Schlafzimmer mit zwei Einzelbetten" loading="lazy"><span>Alle 20 Fotos</span></button>
-        </div>
         <div class="apt-body">
           <h3 id="mar-title">Apartment Mar</h3>
           <p class="apt-sub">Die obere Wohnung, mit Dachterrasse</p>
@@ -199,17 +190,16 @@
           </dl>
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Hallo%2C%20ich%20h%C3%A4tte%20eine%20Frage%20zum%20Apartment%20Mar." target="_blank" rel="noopener">Anfrage zu Mar</a>
         </div>
+        <div class="apt-gallery" data-gallery="mar">
+          <button class="g g-main" data-index="0"><img src="/img/mar/01.jpg" alt="Dachterrasse mit Meerblick" loading="lazy"></button>
+          <button class="g" data-index="1"><img src="/img/mar/02-sm.jpg" alt="Schattige Terrasse mit Esstisch" loading="lazy"></button>
+          <button class="g" data-index="5"><img src="/img/mar/06-sm.jpg" alt="Küche" loading="lazy"></button>
+          <button class="g" data-index="10"><img src="/img/mar/11-sm.jpg" alt="Schlafzimmer mit Doppelbett" loading="lazy"></button>
+          <button class="g g-more" data-index="13"><img src="/img/mar/14-sm.jpg" alt="Schlafzimmer mit zwei Einzelbetten" loading="lazy"><span>Alle 20 Fotos</span></button>
+        </div>
       </article>
 
       <article class="apt apt-flip" aria-labelledby="brisa-title">
-        <figure class="apt-single">
-          <div class="trio">
-            <img class="trio-main" src="/img/brisa/01.jpg" alt="Die neue Küche in Brisa mit schwarzem Kühlschrank" loading="lazy">
-            <img src="/img/brisa/02-sm.jpg" alt="Küche mit Tür nach draußen" loading="lazy">
-            <img src="/img/brisa/03-sm.jpg" alt="Hoher Holzschrank" loading="lazy">
-          </div>
-          <figcaption>Weitere Fotos von Brisa folgen bald. Fragen Sie uns per WhatsApp, dann schicken wir Ihnen welche.</figcaption>
-        </figure>
         <div class="apt-body">
           <h3 id="brisa-title">Apartment Brisa</h3>
           <p class="apt-sub">Die kleinere Wohnung, im Erdgeschoss</p>
@@ -222,6 +212,14 @@
           </dl>
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Hallo%2C%20ich%20h%C3%A4tte%20eine%20Frage%20zum%20Apartment%20Brisa." target="_blank" rel="noopener">Anfrage zu Brisa</a>
         </div>
+        <figure class="apt-single">
+          <div class="trio">
+            <img class="trio-main" src="/img/brisa/01.jpg" alt="Die neue Küche in Brisa mit schwarzem Kühlschrank" loading="lazy">
+            <img src="/img/brisa/02-sm.jpg" alt="Küche mit Tür nach draußen" loading="lazy">
+            <img src="/img/brisa/03-sm.jpg" alt="Hoher Holzschrank" loading="lazy">
+          </div>
+          <figcaption>Weitere Fotos von Brisa folgen bald. Fragen Sie uns per WhatsApp, dann schicken wir Ihnen welche.</figcaption>
+        </figure>
       </article>
 
       <div class="wrap">
@@ -312,7 +310,7 @@
         </article>
       </div>
 
-      <div class="wrap climate" aria-labelledby="climate-title">
+      <div class="wrap climate">
         <h3 id="climate-title" class="climate-title">Das Wetter in der Saison</h3>
         <p class="climate-hint">Wischen Sie die Tabelle seitlich, um alle Spalten zu sehen.</p>
         <div class="climate-scroll">
@@ -331,10 +329,10 @@
         <p class="climate-source">Langjährige Mittelwerte für Zadar. Luft, Sonne und Regen: <a href="https://meteo.hr/klima.php?section=klima_podaci&amp;param=k1&amp;Grad=zadar" target="_blank" rel="noopener">DHMZ</a>, 1961–2024. Meer: 30-jährige Mittelwerte, <a href="https://www.putovnica.net/en/weather/climate/sea-temperature/average-sea-temperature-by-month" target="_blank" rel="noopener">DHMZ-Daten über putovnica.net</a>. Die letzten Sommer waren etwas wärmer.</p>
       </div>
 
-      <div class="wrap trips" aria-labelledby="trips-title">
+      <div class="wrap trips">
         <h3 id="trips-title" class="trips-title">Tagesausflüge</h3>
         <details class="trips-details" open>
-          <summary>Alle 9 Ausflüge anzeigen</summary>
+          <summary><span class="when-closed">Alle 9 Ausflüge anzeigen</span><span class="when-open">Ausflüge ausblenden</span></summary>
         <div class="trips-groups">
           <div class="trip-group">
             <h4>Mit dem Boot ab Dorfhafen</h4>
@@ -466,7 +464,7 @@
     <button class="lb-close" aria-label="Fotos schließen">×</button>
     <button class="lb-prev" aria-label="Vorheriges Foto">‹</button>
     <figure>
-      <img src="" alt="">
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="">
       <figcaption></figcaption>
     </figure>
     <button class="lb-next" aria-label="Nächstes Foto">›</button>
@@ -499,6 +497,6 @@
   ]
 }
   </script>
-  <script src="/script.js?v=10" defer></script>
+  <script src="/script.js?v=11" defer></script>
 </body>
 </html>
