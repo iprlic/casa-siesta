@@ -5,3 +5,6 @@ backup/
 .claude/settings.local.json
 
 .DS_Store
+
+# Original photos for picking (not published)
+photos-inbox/
