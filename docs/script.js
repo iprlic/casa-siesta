@@ -58,3 +58,12 @@ const langs = document.querySelector(".langs");
 document.addEventListener("click", (e) => {
   if (langs && langs.open && !langs.contains(e.target)) langs.open = false;
 });
+
+// On phones the day trips start folded to keep the page short; on wider screens they are always open.
+const trips = document.querySelector(".trips-details");
+if (trips) {
+  const small = window.matchMedia("(max-width: 600px)");
+  const sync = () => { if (!small.matches) trips.open = true; };
+  if (small.matches) trips.open = false;
+  small.addEventListener("change", sync);
+}

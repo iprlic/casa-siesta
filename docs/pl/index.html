@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=8">
+  <link rel="stylesheet" href="/styles.css?v=9">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -155,14 +155,19 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-img" src="/img/hero.jpg" alt="Widok z punktu widokowego Veliki Bokolj: zielona makia, kanał Pašmański i stały ląd pod białymi chmurami" fetchpriority="high">
+      <img class="hero-img" src="/img/hero-1600.jpg" srcset="/img/hero-800.jpg 800w, /img/hero-1200.jpg 1200w, /img/hero-1600.jpg 1600w, /img/hero.jpg 2400w" sizes="(max-width: 960px) 100vw, 67vw" alt="Widok z punktu widokowego Veliki Bokolj: zielona makia, kanał Pašmański i stały ląd pod białymi chmurami" fetchpriority="high">
       <div class="hero-text">
         <h1 id="hero-title">Casa<br>Siesta</h1>
         <p class="hero-lede">Dwa apartamenty wakacyjne w Neviđane, rybackiej wsi na spokojnej wyspie Pašman w Chorwacji. Do plaży jest około 200 m, a życie płynie tu powoli.</p>
         <div class="hero-actions">
-          <a class="btn btn-wa" href="https://wa.me/38598830940?text=Dzie%C5%84%20dobry%2C%20mam%20pytanie%20dotycz%C4%85ce%20pobytu%20w%20Casa%20Siesta." target="_blank" rel="noopener">Napisz do nas na WhatsAppie</a>
+          <a class="btn btn-wa" href="https://wa.me/38598830940?text=Dzie%C5%84%20dobry%2C%20mam%20pytanie%20dotycz%C4%85ce%20pobytu%20w%20Casa%20Siesta." target="_blank" rel="noopener">Zapytaj o terminy i ceny</a>
           <a class="btn btn-ghost" href="#apartments">Zobacz apartamenty</a>
         </div>
+        <ul class="hero-perks">
+          <li>Plaża około 200 m od domu</li>
+          <li>Zwierzęta bez dopłat</li>
+          <li>Deska SUP, kajaki i rowery do pożyczenia</li>
+        </ul>
       </div>
     </section>
 
@@ -298,7 +303,7 @@
           <img src="/img/island/tkon.jpg" alt="Kamienne domy wzdłuż brzegu widziane z promu, w tle góry na stałym lądzie" loading="lazy">
           <div>
             <h3>Tkon i prom</h3>
-            <p>Tkon, 10 km na południe, na samym krańcu wyspy, to główna miejscowość Pašmanu i jego port promowy. Jest tu też apteka. Prom do Biogradu na Moru płynie około 25 minut.</p>
+            <p>Tkon, 10 km na południe, na samym krańcu wyspy, to główna miejscowość Pašmanu i jego port promowy. Jest tu też apteka. Prom do Biogradu na Moru płynie około 20 minut.</p>
             <p class="photo-credit">Fot. <a href="https://commons.wikimedia.org/wiki/File:Trip_to_Croatia-Day_3-Zadar-Trip_to_Pasman_island_(2240106149).jpg" target="_blank" rel="noopener">Coralie Ferreira</a>, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></p>
           </div>
         </article>
@@ -306,10 +311,11 @@
 
       <div class="wrap climate" aria-labelledby="climate-title">
         <h3 id="climate-title" class="climate-title">Pogoda w sezonie</h3>
+        <p class="climate-hint">Przesuń tabelę w bok, aby zobaczyć wszystkie kolumny.</p>
         <div class="climate-scroll">
-          <table>
+          <table aria-labelledby="climate-title">
             <thead>
-              <tr><th scope="col">Miesiąc</th><th scope="col">Dni powyżej 25 °C</th><th scope="col">Średnia temperatura powietrza</th><th scope="col">Temperatura morza</th><th scope="col">Godziny słońca dziennie</th><th scope="col">Dni z deszczem</th></tr>
+              <tr><th scope="col">Miesiąc</th><th scope="col">Dni z temperaturą od 25 °C</th><th scope="col">Średnia temperatura w dzień i w nocy</th><th scope="col">Temperatura morza</th><th scope="col">Godziny słońca dziennie</th><th scope="col">Dni z deszczem</th></tr>
             </thead>
             <tbody>
               <tr><th scope="row">Czerwiec</th><td>18</td><td>22 °C</td><td>20 °C</td><td>10 h</td><td>8</td></tr>
@@ -324,6 +330,8 @@
 
       <div class="wrap trips" aria-labelledby="trips-title">
         <h3 id="trips-title" class="trips-title">Wycieczki jednodniowe</h3>
+        <details class="trips-details" open>
+          <summary>Pokaż wszystkie 9 wycieczek</summary>
         <div class="trips-groups">
           <div class="trip-group">
             <h4>Łodzią z portu w wiosce</h4>
@@ -381,7 +389,9 @@
             </ul>
           </div>
         </div>
+        </details>
         <p class="trips-note">Rozkład promów znajdziesz na stronie <a href="https://www.jadrolinija.hr/en" target="_blank" rel="noopener">Jadrolinii</a>, a wydarzenia na wyspie na stronie <a href="https://www.pasman.hr/en" target="_blank" rel="noopener">organizacji turystycznej Pašmanu</a>. Chętnie pomożemy zaplanować każdą z tych wycieczek.</p>
+      </div>
     </section>
 
     <section id="getting-here" class="getting" aria-labelledby="getting-title">
@@ -391,10 +401,10 @@
           <p class="address">Put Tratice 6, 23264 Neviđane, Pašman, Chorwacja</p>
 
           <h3>Z Zadaru</h3>
-          <p>Z portu w Zadarze płynie prom Jadrolinii do Preko na Ugljanie (około 25 minut, kursy są częste). Następnie przejedź mostem na Pašman i dalej na południe do Neviđane. Jazda z Preko trwa około 30 minut.</p>
+          <p>Z Gaženicy, portu promowego Zadaru położonego na południe od centrum, płynie prom samochodowy Jadrolinii do Preko na Ugljanie (około 25 minut, kursy są częste; zobacz <a href="https://www.jadrolinija.hr/en/travel/zadar_gazenica_-_osljak_-_preko_ugljan" target="_blank" rel="noopener">rozkład Gaženica–Preko</a>). Następnie przejedź mostem na Pašman i dalej na południe do Neviđane. Jazda z Preko trwa około 30 minut.</p>
 
           <h3>Z Biogradu na Moru</h3>
-          <p>Prom płynie do Tkonu na południowym krańcu Pašmanu (około 25 minut), skąd jedzie się 10 km na północ do Neviđane (około 15 minut). Samochodem z Zagrzebia do Biogradu jest około 3,5 godziny autostradą A1, a ze Splitu około 2 godzin.</p>
+          <p>Prom płynie do Tkonu na południowym krańcu Pašmanu (około 20 minut), skąd jedzie się 10 km na północ do Neviđane (około 15 minut). Samochodem z Zagrzebia do Biogradu jest około 3,5 godziny autostradą A1, a ze Splitu około 2 godzin.</p>
 
           <h3>Lotniska</h3>
           <p>Najbliżej jest Zadar, około 1,5 godziny drogi razem z promem. Z lotniska w Splicie jedzie się około 2,5 godziny. Chętnie pomożemy z trasą i wynajmem samochodu.</p>
@@ -486,6 +496,6 @@
   ]
 }
   </script>
-  <script src="/script.js?v=8" defer></script>
+  <script src="/script.js?v=9" defer></script>
 </body>
 </html>

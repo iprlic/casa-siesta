@@ -4,7 +4,7 @@ Static one-page site for Casa Siesta, two family-run holiday apartments (Mar and
 
 ## Layout
 
-- `docs/index.html`: English page.
+- `docs/index.html`: English page. On phones the day trips start folded (`details.trips-details`, closed by `script.js` at ≤600 px) and the section menu shows as a scrollable second header row.
 - `docs/{hr,sl,de,cs,it,pl}/index.html`: Croatian, Slovenian, German, Czech, Italian and Polish versions. Same HTML structure as English, only the text differs.
 - `docs/styles.css`, `docs/script.js`, `docs/img/`: shared by all languages. Always reference them with absolute paths (`/styles.css`, `/img/...`). The CSS and JS links carry a version (`/styles.css?v=4`): bump it in all 7 pages whenever you change `styles.css` or `script.js`, because GitHub Pages lets browsers cache them for 10 minutes and new HTML with old CSS breaks the layout.
 - `docs/CNAME`, `docs/.nojekyll`: needed by GitHub Pages; don't remove.
@@ -28,6 +28,7 @@ Static one-page site for Casa Siesta, two family-run holiday apartments (Mar and
 - The village beach (Uvala Vruljine) is about 200 m from the house. Recommended restaurant: Stari Zidi in Neviđane.
 - Hosts speak Croatian and English.
 - Weather table: DHMZ Zadar 1961–2024 (air, sunshine, rain days); sea temps are 30-year DHMZ averages via putovnica.net.
+- Ferries (checked on jadrolinija.hr, 2026-10-26): the Zadar–Preko car ferry leaves from Gaženica port, 25 min; the city-harbour line 409 is foot passengers only. Biograd–Tkon takes 20 min.
 - Travel times were checked with OSRM (OpenStreetMap routing) on 2026-10-26: Preko ferry to house ~30 min, Tkon ferry to house ~15 min, Zadar airport ~1.5 h incl. ferry, Split airport ~2.5 h incl. ferry.
 - Both apartments: air conditioning, Wi-Fi, kitchen with dishwasher, washing machine, free parking.
 - The price includes bed linen, towels, tourist tax and final cleaning. Prices are not set yet ("On request").

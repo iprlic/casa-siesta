@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=8">
+  <link rel="stylesheet" href="/styles.css?v=9">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -155,14 +155,19 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-img" src="/img/hero.jpg" alt="Panorama dal belvedere Veliki Bokolj: macchia verde, il canale di Pašman e la terraferma sotto nuvole bianche" fetchpriority="high">
+      <img class="hero-img" src="/img/hero-1600.jpg" srcset="/img/hero-800.jpg 800w, /img/hero-1200.jpg 1200w, /img/hero-1600.jpg 1600w, /img/hero.jpg 2400w" sizes="(max-width: 960px) 100vw, 67vw" alt="Panorama dal belvedere Veliki Bokolj: macchia verde, il canale di Pašman e la terraferma sotto nuvole bianche" fetchpriority="high">
       <div class="hero-text">
         <h1 id="hero-title">Casa<br>Siesta</h1>
         <p class="hero-lede">Due appartamenti per le vacanze a Neviđane, un villaggio di pescatori sulla tranquilla isola di Pašman, in Croazia. La spiaggia è a circa 200 m e qui la vita scorre lenta.</p>
         <div class="hero-actions">
-          <a class="btn btn-wa" href="https://wa.me/38598830940?text=Ciao%2C%20vorrei%20informazioni%20per%20un%20soggiorno%20a%20Casa%20Siesta." target="_blank" rel="noopener">Scriveteci su WhatsApp</a>
+          <a class="btn btn-wa" href="https://wa.me/38598830940?text=Ciao%2C%20vorrei%20informazioni%20per%20un%20soggiorno%20a%20Casa%20Siesta." target="_blank" rel="noopener">Chiedete date e prezzi</a>
           <a class="btn btn-ghost" href="#apartments">Scoprite gli appartamenti</a>
         </div>
+        <ul class="hero-perks">
+          <li>Spiaggia a circa 200 m</li>
+          <li>Animali ospiti gratis</li>
+          <li>Paddleboard, kayak e bici in prestito</li>
+        </ul>
       </div>
     </section>
 
@@ -298,7 +303,7 @@
           <img src="/img/island/tkon.jpg" alt="Case in pietra lungo la riva viste dal traghetto, con le montagne della terraferma sullo sfondo" loading="lazy">
           <div>
             <h3>Tkon e il traghetto</h3>
-            <p>Tkon, 10 km a sud, sulla punta dell'isola, è il centro principale di Pašman e il suo porto dei traghetti; qui c'è anche una farmacia. I traghetti arrivano a Biograd na Moru in circa 25 minuti.</p>
+            <p>Tkon, 10 km a sud, sulla punta dell'isola, è il centro principale di Pašman e il suo porto dei traghetti; qui c'è anche una farmacia. I traghetti arrivano a Biograd na Moru in circa 20 minuti.</p>
             <p class="photo-credit">Foto: <a href="https://commons.wikimedia.org/wiki/File:Trip_to_Croatia-Day_3-Zadar-Trip_to_Pasman_island_(2240106149).jpg" target="_blank" rel="noopener">Coralie Ferreira</a>, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></p>
           </div>
         </article>
@@ -306,10 +311,11 @@
 
       <div class="wrap climate" aria-labelledby="climate-title">
         <h3 id="climate-title" class="climate-title">Il tempo in stagione</h3>
+        <p class="climate-hint">Scorrete la tabella lateralmente per vedere tutte le colonne.</p>
         <div class="climate-scroll">
-          <table>
+          <table aria-labelledby="climate-title">
             <thead>
-              <tr><th scope="col">Mese</th><th scope="col">Giorni sopra i 25 °C</th><th scope="col">Temperatura media dell'aria</th><th scope="col">Temperatura del mare</th><th scope="col">Ore di sole al giorno</th><th scope="col">Giorni di pioggia</th></tr>
+              <tr><th scope="col">Mese</th><th scope="col">Giorni con almeno 25 °C</th><th scope="col">Temperatura media, giorno e notte</th><th scope="col">Temperatura del mare</th><th scope="col">Ore di sole al giorno</th><th scope="col">Giorni di pioggia</th></tr>
             </thead>
             <tbody>
               <tr><th scope="row">Giugno</th><td>18</td><td>22 °C</td><td>20 °C</td><td>10 h</td><td>8</td></tr>
@@ -324,6 +330,8 @@
 
       <div class="wrap trips" aria-labelledby="trips-title">
         <h3 id="trips-title" class="trips-title">Gite di un giorno</h3>
+        <details class="trips-details" open>
+          <summary>Mostra tutte le 9 gite</summary>
         <div class="trips-groups">
           <div class="trip-group">
             <h4>In barca dal porto del villaggio</h4>
@@ -381,7 +389,9 @@
             </ul>
           </div>
         </div>
+        </details>
         <p class="trips-note">Per gli orari dei traghetti consultate <a href="https://www.jadrolinija.hr/en" target="_blank" rel="noopener">Jadrolinija</a>, per gli eventi sull'isola l'<a href="https://www.pasman.hr/it" target="_blank" rel="noopener">ente turistico di Pašman</a>. Saremo felici di aiutarvi a organizzare una qualsiasi di queste gite.</p>
+      </div>
     </section>
 
     <section id="getting-here" class="getting" aria-labelledby="getting-title">
@@ -391,10 +401,10 @@
           <p class="address">Put Tratice 6, 23264 Neviđane, Pašman, Croazia</p>
 
           <h3>Da Zadar</h3>
-          <p>Prendete il traghetto Jadrolinija dal porto di Zadar per Preko, su Ugljan (circa 25 minuti, con partenze frequenti). Attraversate il ponte per Pašman e proseguite verso sud fino a Neviđane. Da Preko il tragitto in auto dura circa 30 minuti.</p>
+          <p>Prendete il traghetto Jadrolinija per auto da Gaženica, il porto traghetti di Zadar (Zara) a sud del centro, per Preko, su Ugljan (circa 25 minuti, con partenze frequenti; consultate l'<a href="https://www.jadrolinija.hr/en/travel/zadar_gazenica_-_osljak_-_preko_ugljan" target="_blank" rel="noopener">orario Gaženica–Preko</a>). Attraversate il ponte per Pašman e proseguite verso sud fino a Neviđane. Da Preko il tragitto in auto dura circa 30 minuti.</p>
 
           <h3>Da Biograd na Moru</h3>
-          <p>Prendete il traghetto per Tkon, sulla punta meridionale di Pašman (circa 25 minuti), poi guidate per 10 km verso nord fino a Neviđane (circa 15 minuti). In auto da Zagabria, Biograd dista circa 3,5 ore sull'A1. Da Spalato circa 2 ore.</p>
+          <p>Prendete il traghetto per Tkon, sulla punta meridionale di Pašman (circa 20 minuti), poi guidate per 10 km verso nord fino a Neviđane (circa 15 minuti). In auto da Zagabria, Biograd dista circa 3,5 ore sull'A1. Da Spalato circa 2 ore.</p>
 
           <h3>Aeroporti</h3>
           <p>Il più vicino è quello di Zadar, a circa 1 ora e mezza compreso il traghetto. Dall'aeroporto di Spalato ci vogliono circa 2 ore e mezza. Possiamo aiutarvi con il percorso e il noleggio auto.</p>
@@ -486,6 +496,6 @@
   ]
 }
   </script>
-  <script src="/script.js?v=8" defer></script>
+  <script src="/script.js?v=9" defer></script>
 </body>
 </html>

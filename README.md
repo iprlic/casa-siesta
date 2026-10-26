@@ -36,6 +36,7 @@ docs/              the website (the only folder GitHub Pages publishes)
   .nojekyll        tells GitHub Pages to serve files as they are
 CLAUDE.md          project rules for Claude Code
 PROMOTION.md       checklist for getting found on Google, Maps and elsewhere
+WEBSITE_REVIEW.md  external review of the site (26 Oct 2026), kept for reference
 .claude/           shared Claude Code settings
 backup/            old site's database dump (gitignored, never pushed)
 ```

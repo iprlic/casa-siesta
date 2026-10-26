@@ -38,7 +38,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=8">
+  <link rel="stylesheet" href="/styles.css?v=9">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -155,14 +155,19 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-img" src="/img/hero.jpg" alt="Razgled z razgledišča Veliki Bokolj: zelena makija, Pašmanski kanal in celina pod belimi oblaki" fetchpriority="high">
+      <img class="hero-img" src="/img/hero-1600.jpg" srcset="/img/hero-800.jpg 800w, /img/hero-1200.jpg 1200w, /img/hero-1600.jpg 1600w, /img/hero.jpg 2400w" sizes="(max-width: 960px) 100vw, 67vw" alt="Razgled z razgledišča Veliki Bokolj: zelena makija, Pašmanski kanal in celina pod belimi oblaki" fetchpriority="high">
       <div class="hero-text">
         <h1 id="hero-title">Casa<br>Siesta</h1>
         <p class="hero-lede">Dva počitniška apartmaja v Neviđanah, ribiški vasi na mirnem otoku Pašman na Hrvaškem. Do plaže je približno 200 m, življenje pa teče počasi.</p>
         <div class="hero-actions">
-          <a class="btn btn-wa" href="https://wa.me/38598830940?text=Pozdravljeni%2C%20zanima%20me%20bivanje%20v%20Casa%20Siesta." target="_blank" rel="noopener">Pišite nam na WhatsApp</a>
+          <a class="btn btn-wa" href="https://wa.me/38598830940?text=Pozdravljeni%2C%20zanima%20me%20bivanje%20v%20Casa%20Siesta." target="_blank" rel="noopener">Povprašajte za termine in cene</a>
           <a class="btn btn-ghost" href="#apartments">Oglejte si apartmaja</a>
         </div>
+        <ul class="hero-perks">
+          <li>Do plaže približno 200 m</li>
+          <li>Hišni ljubljenčki brezplačno</li>
+          <li>SUP deska, kajaki in kolesa na voljo</li>
+        </ul>
       </div>
     </section>
 
@@ -298,7 +303,7 @@
           <img src="/img/island/tkon.jpg" alt="Kamnite hiše ob obali, kot se vidijo s trajekta, v ozadju gore na celini" loading="lazy">
           <div>
             <h3>Tkon in trajekt</h3>
-            <p>Tkon, 10 km južneje na koncu otoka, je glavni kraj Pašmana in njegovo trajektno pristanišče, tam je tudi lekarna. Trajekt do Biograda na Moru pluje približno 25 minut.</p>
+            <p>Tkon, 10 km južneje na koncu otoka, je glavni kraj Pašmana in njegovo trajektno pristanišče, tam je tudi lekarna. Trajekt do Biograda na Moru pluje približno 20 minut.</p>
             <p class="photo-credit">Foto: <a href="https://commons.wikimedia.org/wiki/File:Trip_to_Croatia-Day_3-Zadar-Trip_to_Pasman_island_(2240106149).jpg" target="_blank" rel="noopener">Coralie Ferreira</a>, <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a></p>
           </div>
         </article>
@@ -306,10 +311,11 @@
 
       <div class="wrap climate" aria-labelledby="climate-title">
         <h3 id="climate-title" class="climate-title">Vreme v sezoni</h3>
+        <p class="climate-hint">Tabelo podrsajte vstran, da vidite vse stolpce.</p>
         <div class="climate-scroll">
-          <table>
+          <table aria-labelledby="climate-title">
             <thead>
-              <tr><th scope="col">Mesec</th><th scope="col">Dnevi nad 25 °C</th><th scope="col">Povprečna temperatura zraka</th><th scope="col">Temperatura morja</th><th scope="col">Sonce na dan</th><th scope="col">Deževni dnevi</th></tr>
+              <tr><th scope="col">Mesec</th><th scope="col">Dnevi z vsaj 25 °C</th><th scope="col">Povprečna temperatura, dan in noč</th><th scope="col">Temperatura morja</th><th scope="col">Sonce na dan</th><th scope="col">Deževni dnevi</th></tr>
             </thead>
             <tbody>
               <tr><th scope="row">Junij</th><td>18</td><td>22 °C</td><td>20 °C</td><td>10 ur</td><td>8</td></tr>
@@ -324,6 +330,8 @@
 
       <div class="wrap trips" aria-labelledby="trips-title">
         <h3 id="trips-title" class="trips-title">Enodnevni izleti</h3>
+        <details class="trips-details" open>
+          <summary>Prikaži vseh 9 izletov</summary>
         <div class="trips-groups">
           <div class="trip-group">
             <h4>Z ladjo iz vaškega pristanišča</h4>
@@ -381,7 +389,9 @@
             </ul>
           </div>
         </div>
+        </details>
         <p class="trips-note">Vozni red trajektov najdete pri <a href="https://www.jadrolinija.hr/en" target="_blank" rel="noopener">Jadroliniji</a>, dogodke na otoku pa pri <a href="https://www.pasman.hr/en" target="_blank" rel="noopener">Turistični skupnosti Pašman</a>. Z veseljem vam pomagamo načrtovati katerega koli od teh izletov.</p>
+      </div>
     </section>
 
     <section id="getting-here" class="getting" aria-labelledby="getting-title">
@@ -391,10 +401,10 @@
           <p class="address">Put Tratice 6, 23264 Neviđane, Pašman, Hrvaška</p>
 
           <h3>Iz Zadra</h3>
-          <p>S trajektom Jadrolinije se iz zadrskega pristanišča zapeljite do Preka na Ugljanu (približno 25 minut, pogosti odhodi). Prek mostu zapeljite na Pašman in nato proti jugu do Neviđan. Vožnja od Preka traja približno 30 minut.</p>
+          <p>S trajektom Jadrolinije se iz Gaženice, zadrskega trajektnega pristanišča južno od središča, zapeljite do Preka na Ugljanu (približno 25 minut, pogosti odhodi; glejte <a href="https://www.jadrolinija.hr/en/travel/zadar_gazenica_-_osljak_-_preko_ugljan" target="_blank" rel="noopener">vozni red Gaženica–Preko</a>). Prek mostu zapeljite na Pašman in nato proti jugu do Neviđan. Vožnja od Preka traja približno 30 minut.</p>
 
           <h3>Iz Biograda na Moru</h3>
-          <p>S trajektom se zapeljite do Tkona na južnem koncu Pašmana (približno 25 minut), nato pa 10 km proti severu do Neviđan (približno 15 minut). Če prihajate z avtom iz Zagreba, je do Biograda po avtocesti A1 približno 3,5 ure. Iz Splita približno 2 uri.</p>
+          <p>S trajektom se zapeljite do Tkona na južnem koncu Pašmana (približno 20 minut), nato pa 10 km proti severu do Neviđan (približno 15 minut). Če prihajate z avtom iz Zagreba, je do Biograda po avtocesti A1 približno 3,5 ure. Iz Splita približno 2 uri.</p>
 
           <h3>Letališča</h3>
           <p>Najbližje je letališče Zadar, približno uro in pol vožnje skupaj s trajektom. Z letališča v Splitu potrebujete približno dve uri in pol. Pomagamo vam lahko pri načrtovanju poti in najemu avtomobila.</p>
@@ -486,6 +496,6 @@
   ]
 }
   </script>
-  <script src="/script.js?v=8" defer></script>
+  <script src="/script.js?v=9" defer></script>
 </body>
 </html>
