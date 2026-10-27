@@ -228,11 +228,12 @@ a { color: inherit; }
 .apt-single { margin: 0; }
 .apt-single img { width: 100%; border-radius: 4px; aspect-ratio: 4 / 3; object-fit: cover; }
 .apt-single .trio {
-  display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: repeat(2, minmax(0, 1fr));
+  display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: .5rem; aspect-ratio: 4 / 3;
 }
 .apt-single .trio img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; aspect-ratio: auto; }
 .apt-single .trio-main { grid-row: span 2; }
+.apt-single .trio img:last-child { grid-column: 2 / span 2; }
 .apt-single figcaption { font-size: 1rem; font-style: italic; color: var(--pine); margin-top: .75rem; max-width: 34rem; }
 
 .both {
@@ -321,6 +322,8 @@ a { color: inherit; }
 .trip-list a { text-decoration: underline; text-decoration-color: var(--awning); text-decoration-thickness: 2px; text-underline-offset: .2em; }
 .trip-list a:hover { color: var(--awning); }
 .trip-meta { display: block; font: 500 .92rem/1.35 var(--sans); color: var(--awning); margin: .35rem 0 .45rem; }
+.trip-img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; margin-bottom: .8rem; }
+.trip-group > .trip-img { margin-bottom: 1.5rem; }
 .trip-list p { margin: 0; font-size: 1.05rem; color: #d8e6e8; }
 .trips-note { margin: 2.5rem 0 0; font-size: 1.05rem; color: #d8e6e8; max-width: 44rem; }
 .trips-note a { color: var(--white); text-decoration-color: var(--awning); text-underline-offset: .2em; }
