@@ -188,7 +188,7 @@ a { color: inherit; }
   padding: 0 var(--gutter);
 }
 .apt-flip { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
-.apt:not(.apt-flip) > .apt-gallery { order: -1; }
+.apt:not(.apt-flip) > .apt-gallery, .apt:not(.apt-flip) > .apt-single { order: -1; }
 
 .apt-body h3 {
   font-size: clamp(2rem, 3.5vw, 2.75rem);
@@ -228,12 +228,11 @@ a { color: inherit; }
 .apt-single { margin: 0; }
 .apt-single img { width: 100%; border-radius: 4px; aspect-ratio: 4 / 3; object-fit: cover; }
 .apt-single .trio {
-  display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: repeat(2, minmax(0, 1fr));
+  display: grid; grid-template-columns: 2fr 1fr; grid-template-rows: repeat(2, minmax(0, 1fr));
   gap: .5rem; aspect-ratio: 4 / 3;
 }
 .apt-single .trio img { width: 100%; height: 100%; object-fit: cover; border-radius: 4px; aspect-ratio: auto; }
 .apt-single .trio-main { grid-row: span 2; }
-.apt-single .trio img:last-child { grid-column: 2 / span 2; }
 .apt-single figcaption { font-size: 1rem; font-style: italic; color: var(--pine); margin-top: .75rem; max-width: 34rem; }
 
 .both {
@@ -422,7 +421,7 @@ a { color: inherit; }
   .hero h1 { margin: -.3em 0 1.5rem; margin-right: 0; font-size: clamp(5rem, 24vw, 10rem); }
 
   .apt, .apt-flip { grid-template-columns: 1fr; }
-  .apt:not(.apt-flip) > .apt-gallery { order: 0; }
+  .apt:not(.apt-flip) > .apt-gallery, .apt:not(.apt-flip) > .apt-single { order: 0; }
   .both, .garden, .island-head, .getting-grid { grid-template-columns: 1fr; }
   .things { grid-template-columns: 1fr 1fr; }
   .thing-wide { grid-column: span 2; }
