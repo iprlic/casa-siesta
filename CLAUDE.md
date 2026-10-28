@@ -21,10 +21,10 @@ Static one-page site for Casa Siesta, three family-run holiday apartments (Mar, 
 
 ## Confirmed facts
 
-- Mar and Brisa officially rated 3 stars. Open June to September. Minimum stay 7 nights, arrival on any day (no fixed changeover day). Non-smoking. Hosts meet guests in person, or leave keys in a key box when away; early check-in/late check-out on request. Check-in from 14:00, check-out by 10:00.
+- All three apartments officially rated 3 stars. Open June to September. Minimum stay 7 nights, arrival on any day (no fixed changeover day). Non-smoking. Hosts meet guests in person, or leave keys in a key box when away; early check-in/late check-out on request. Check-in from 14:00, check-out by 10:00.
 - Mar: upper floor, about 51 m² (partly under the sloping roof), two bedrooms (one double bed, one with two single beds) plus a sofa bed, sleeps up to 5, roof terrace with pergola (~36 m²), balcony (~9 m²).
 - Brisa: ground floor under Mar's roof terrace, about 30 m², one bedroom, living room with a new kitchen (2026), one bathroom with shower and toilet (NOT a separate toilet); bunk bed plus a sofa bed that opens into a double; sleeps up to 4; uses the garden. No internal doors to Sol. Regular front door (the old garage door is gone).
-- Sol: rest of the ground floor, about 51 m², two bedrooms (queen-size bed; bunk bed + single bed), living room with kitchen and dining area (dark wood kitchen with dishwasher), bathroom; sleeps up to 5; covered terrace under a vine and awning (the 'shaded terrace' photo is Sol's, not Brisa's). Same amenities as Mar. Star rating not confirmed (only Mar and Brisa are stated as 3 stars).
+- Sol: rest of the ground floor, about 51 m², two bedrooms (queen-size bed; bunk bed + single bed), living room with kitchen and dining area (dark wood kitchen with dishwasher), bathroom; sleeps up to 5; covered terrace under a vine and awning (the 'shaded terrace' photo is Sol's, not Brisa's). Same amenities as Mar.
 - Floor areas come from the owners' FreeCAD model ~/Documents/Kuca_Nevidane.FCStd (net, inside walls).
 - Pets welcome, no extra charge. Baby cot and high chair available. Guests can borrow the paddleboard, kayaks and bikes (no beach towels or parasol). Parking for 5–6 cars. Guests may use the garden barbecue (not the pizza oven). Guests are welcome to sit in the garden. The cat in photos is the neighbours'.
 - The village beach (Uvala Vruljine) is about 200 m from the house. Recommended restaurant: Stari Zidi in Neviđane.
