@@ -9,6 +9,10 @@ Static one-page site for Casa Siesta, three family-run holiday apartments (Mar, 
 - `docs/styles.css`, `docs/script.js`, `docs/img/`: shared by all languages. Always reference them with absolute paths (`/styles.css`, `/img/...`). The CSS and JS links carry a version (`/styles.css?v=4`): bump it in all 7 pages whenever you change `styles.css` or `script.js`, because GitHub Pages lets browsers cache them for 10 minutes and new HTML with old CSS breaks the layout.
 - `docs/CNAME`, `docs/.nojekyll`: needed by GitHub Pages; don't remove.
 - `docs/robots.txt`, `docs/sitemap.xml`, `docs/404.html`, `docs/favicon.ico`, `docs/img/social.jpg` (1200×630 link-preview image): SEO basics. When page content changes, update every `<lastmod>` date in `sitemap.xml`. A new language means a new entry in the sitemap, the hreflang block of every page, `og:locale:alternate` tags and `404.html`.
+- Fonts are self-hosted in `docs/fonts/` (Bricolage Grotesque and Newsreader, latin + latin-ext woff2, SIL OFL); no Google Fonts requests. The two latin files are preloaded in every page.
+- Images are served as WebP (`docs/img/**/*.webp`). When adding a photo, convert the original with `magick in.heic -auto-orient -strip -resize ... -quality 74 out.webp`. Only `social.jpg`, `mar/01.jpg` and `house.jpg` stay JPEG, for link previews and structured data.
+- `docs/llms.txt`: plain-text summary for AI crawlers. Keep it in sync with the confirmed facts (prices, apartments, rules).
+- The FAQ section (`#faq`) has a matching `FAQPage` JSON-LD block in each page, generated from the visible questions and answers; update both together.
 - `backup/`: old QloApps database dump and files. Private and gitignored; never commit it.
 
 ## Rules

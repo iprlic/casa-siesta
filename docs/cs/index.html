@@ -35,10 +35,9 @@
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/img/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=13">
+  <link rel="preload" href="/fonts/bricolage-grotesque-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/newsreader-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css?v=14">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -119,7 +118,145 @@
       "hr",
       "en"
     ],
-    "priceRange": "€80–€120 per night"
+    "priceRange": "€80–€120 per night",
+    "description": "Three family-run holiday apartments (Mar, Brisa and Sol) in Neviđane on Pašman island, Croatia, about 200 m from the village beach. Open June to September, minimum stay 7 nights, pets welcome.",
+    "containsPlace": [
+      {
+        "@type": "Apartment",
+        "name": "Apartment Mar",
+        "description": "Whole upper floor with a roof terrace and a balcony, sea view over the pines. €100 a night, €120 from 15 July to 15 August.",
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 51,
+          "unitCode": "MTK"
+        },
+        "numberOfBedrooms": 2,
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "maxValue": 5
+        },
+        "bed": "Double bed, two single beds, sofa bed",
+        "petsAllowed": true
+      },
+      {
+        "@type": "Apartment",
+        "name": "Apartment Brisa",
+        "description": "Smaller ground-floor apartment with a new kitchen, using the garden. €80 a night, €100 from 15 July to 15 August.",
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 30,
+          "unitCode": "MTK"
+        },
+        "numberOfBedrooms": 1,
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "maxValue": 4
+        },
+        "bed": "Bunk bed, sofa bed that opens into a double",
+        "petsAllowed": true
+      },
+      {
+        "@type": "Apartment",
+        "name": "Apartment Sol",
+        "description": "Ground-floor apartment with a covered terrace under a vine. €100 a night, €120 from 15 July to 15 August.",
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 51,
+          "unitCode": "MTK"
+        },
+        "numberOfBedrooms": 2,
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "maxValue": 5
+        },
+        "bed": "Queen-size bed, bunk bed, single bed",
+        "petsAllowed": true
+      }
+    ],
+    "sameAs": [
+      "https://www.google.com/maps?cid=14389742535623081854"
+    ]
+  }
+  </script>
+  <script type="application/ld+json" id="faq-data">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "cs",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Můžeme přijet se zvířetem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ano. Mazlíčci jsou vítáni a pobyt mají zdarma."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jaký je minimální pobyt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sedm nocí. Přijet můžete kterýkoli den v týdnu. Otevřeno máme od června do září."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Co je v ceně?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ložní prádlo, ručníky, turistická taxa a závěrečný úklid. Nic dalšího neplatíte."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak daleko je pláž?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Vesnická pláž je asi 200 m od domu. Voda je průzračná a mělká."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Který apartmán se k nám hodí?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mar zabírá celé horní patro se střešní terasou a vejde se do něj až 5 osob. Sol je v přízemí s krytou terasou a je také pro až 5 osob. Brisa je menší apartmán v přízemí pro až 4 osoby."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Máte dětskou postýlku a jídelní židličku?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ano, máme obojí. Stačí nám dát vědět při rezervaci."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dá se u vás parkovat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ano, parkování u domu je zdarma a je tu místo pro 5–6 aut."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak se k vám dostaneme?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Jeďte trajektem z Gaženice v Zadaru do Preka (25 minut) a pak asi 30 minut autem, nebo trajektem z Biogradu na Moru do Tkonu (20 minut) a pak asi 15 minut autem. Z letiště v Zadaru je to asi 1½ hodiny včetně trajektu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak si můžeme rezervovat?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Napište nám na WhatsApp, zavolejte na +385 98 830 940 nebo pošlete e-mail na info@casa-siesta.org a uveďte termín a počet hostů. Potvrdíme vám dostupnost a cenu. Mluvíme chorvatsky a anglicky."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -154,9 +291,9 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-img" src="/img/hero-1600.jpg" srcset="/img/hero-800.jpg 800w, /img/hero-1200.jpg 1200w, /img/hero-1600.jpg 1600w, /img/hero.jpg 2400w" sizes="(max-width: 960px) 100vw, 67vw" alt="Výhled z vyhlídky Veliki Bokolj: zelená macchie, Pašmanský průliv a pevnina pod bílými mraky" fetchpriority="high">
+      <img class="hero-img" src="/img/hero-1600.webp" srcset="/img/hero-800.webp 800w, /img/hero-1200.webp 1200w, /img/hero-1600.webp 1600w, /img/hero.webp 2400w" sizes="(max-width: 960px) 100vw, 67vw" alt="Výhled z vyhlídky Veliki Bokolj: zelená macchie, Pašmanský průliv a pevnina pod bílými mraky" fetchpriority="high">
       <div class="hero-text">
-        <h1 id="hero-title">Casa<br>Siesta</h1>
+        <h1 id="hero-title">Casa<br>Siesta<span class="h1-sub">Prázdninové apartmány na ostrově Pašman</span></h1>
         <p class="hero-lede">Tři prázdninové apartmány v Neviđanech, rybářské vesnici na klidném ostrově Pašman v Chorvatsku. Na pláž je to asi 200 m a život tu plyne pomalu.</p>
         <div class="hero-actions">
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20dotaz%20na%20ubytov%C3%A1n%C3%AD%20v%20Casa%20Siesta." target="_blank" rel="noopener">Zeptejte se na termíny a ceny</a>
@@ -192,11 +329,11 @@
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20dotaz%20na%20apartm%C3%A1n%20Mar." target="_blank" rel="noopener">Zeptejte se na Mar</a>
         </div>
         <div class="apt-gallery" data-gallery="mar">
-          <button class="g g-main" data-index="0"><img src="/img/mar/01.jpg" alt="Střešní terasa s výhledem na moře" loading="lazy"></button>
-          <button class="g" data-index="1"><img src="/img/mar/02-sm.jpg" alt="Stíněná terasa s jídelním stolem" loading="lazy"></button>
-          <button class="g" data-index="5"><img src="/img/mar/06-sm.jpg" alt="Kuchyň" loading="lazy"></button>
-          <button class="g" data-index="10"><img src="/img/mar/11-sm.jpg" alt="Ložnice s manželskou postelí" loading="lazy"></button>
-          <button class="g g-more" data-index="13"><img src="/img/mar/14-sm.jpg" alt="Ložnice se dvěma lůžky" loading="lazy"><span>Všech 20 fotografií</span></button>
+          <button class="g g-main" data-index="0"><img src="/img/mar/01-md.webp" alt="Střešní terasa s výhledem na moře" loading="lazy"></button>
+          <button class="g" data-index="1"><img src="/img/mar/02-sm.webp" alt="Stíněná terasa s jídelním stolem" loading="lazy"></button>
+          <button class="g" data-index="5"><img src="/img/mar/06-sm.webp" alt="Kuchyň" loading="lazy"></button>
+          <button class="g" data-index="10"><img src="/img/mar/11-sm.webp" alt="Ložnice s manželskou postelí" loading="lazy"></button>
+          <button class="g g-more" data-index="13"><img src="/img/mar/14-sm.webp" alt="Ložnice se dvěma lůžky" loading="lazy"><span>Všech 20 fotografií</span></button>
         </div>
       </article>
 
@@ -216,9 +353,9 @@
         </div>
         <figure class="apt-single">
           <div class="trio">
-            <img class="trio-main" src="/img/brisa/01.jpg" alt="Nová kuchyně v Brise s černou lednicí" loading="lazy">
-            <img src="/img/brisa/02-sm.jpg" alt="Kuchyně s dveřmi ven" loading="lazy">
-            <img src="/img/brisa/03-sm.jpg" alt="Vysoká dřevěná skříň" loading="lazy">
+            <img class="trio-main" src="/img/brisa/01.webp" alt="Nová kuchyně v Brise s černou lednicí" loading="lazy">
+            <img src="/img/brisa/02-sm.webp" alt="Kuchyně s dveřmi ven" loading="lazy">
+            <img src="/img/brisa/03-sm.webp" alt="Vysoká dřevěná skříň" loading="lazy">
           </div>
           <figcaption>Další fotky Brisy brzy přidáme. Napište nám na WhatsApp a pošleme vám je.</figcaption>
         </figure>
@@ -239,7 +376,7 @@
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Dobr%C3%BD%20den%2C%20m%C3%A1m%20dotaz%20na%20apartm%C3%A1n%20Sol." target="_blank" rel="noopener">Zeptejte se na Sol</a>
         </div>
         <figure class="apt-single">
-          <img src="/img/sol/terrace.jpg" alt="Stinná terasa apartmánu Sol pod vinnou révou a markýzou" loading="lazy">
+          <img src="/img/sol/terrace.webp" alt="Stinná terasa apartmánu Sol pod vinnou révou a markýzou" loading="lazy">
           <figcaption>Další fotky apartmánu Sol brzy přidáme. Napište nám na WhatsApp a pošleme vám je.</figcaption>
         </figure>
       </article>
@@ -273,11 +410,11 @@
           <div>
             <p>Všechny tři apartmány jsou v jednom domě obklopeném zahradou s citrusy, dalšími ovocnými stromy a našimi záhony se zeleninou. Na zahradě si můžete klidně posedět. Nedaleko rostou staré olivovníky a sousedova kočka se často přijde pozdravit.</p>
             <div class="garden-photos">
-              <img class="gp-main" src="/img/garden/house.jpg" alt="Dům v zahradě s trávníkem a ovocnými stromy" loading="lazy">
-              <img src="/img/garden/citrus.jpg" alt="Citrusovník se zralými plody na zahradě" loading="lazy">
-              <img src="/img/garden/vegetables.jpg" alt="Naše záhony se zeleninou" loading="lazy">
-              <img src="/img/garden/olive.jpg" alt="Kmen starého olivovníku nedaleko" loading="lazy">
-              <img src="/img/garden/cat.jpg" alt="Sousedova kočka na zahradě" loading="lazy">
+              <img class="gp-main" src="/img/garden/house.webp" alt="Dům v zahradě s trávníkem a ovocnými stromy" loading="lazy">
+              <img src="/img/garden/citrus.webp" alt="Citrusovník se zralými plody na zahradě" loading="lazy">
+              <img src="/img/garden/vegetables.webp" alt="Naše záhony se zeleninou" loading="lazy">
+              <img src="/img/garden/olive.webp" alt="Kmen starého olivovníku nedaleko" loading="lazy">
+              <img src="/img/garden/cat.webp" alt="Sousedova kočka na zahradě" loading="lazy">
             </div>
           </div>
         </div>
@@ -295,35 +432,35 @@
 
       <div class="wrap things">
         <article class="thing thing-wide">
-          <img src="/img/island/bokolj.jpg" alt="Západ slunce nad ostrovy z Velikého Bokolje, dítě se dívá" loading="lazy">
+          <img src="/img/island/bokolj.webp" alt="Západ slunce nad ostrovy z Velikého Bokolje, dítě se dívá" loading="lazy">
           <div>
             <h3>Vyhlídka Veliki Bokolj</h3>
             <p>Vyhlídka nad Dobropoljanou, asi 3 km od domu, nabízí výhled na celý průliv, pevninu a ostrovy na západě. Vyjděte si sem na západ slunce.</p>
           </div>
         </article>
         <article class="thing">
-          <img src="/img/island/paddleboard.jpg" alt="Paddleboard v zátoce u domu" loading="lazy">
+          <img src="/img/island/paddleboard.webp" alt="Paddleboard v zátoce u domu" loading="lazy">
           <div>
             <h3>Pláž</h3>
             <p>Vesnická pláž je asi 200 m od domu. Voda je průzračná a mělká, ideální na koupání i šnorchlování, a plno tu bývá jen málokdy. Můžete si od nás půjčit paddleboard a kajaky.</p>
           </div>
         </article>
         <article class="thing">
-          <img src="/img/island/telascica.jpg" alt="Ostrůvek s majákem v přírodním parku Telašćica, pohled z lodi" loading="lazy">
+          <img src="/img/island/telascica.webp" alt="Ostrůvek s majákem v přírodním parku Telašćica, pohled z lodi" loading="lazy">
           <div>
             <h3>Výlety lodí</h3>
             <p>Z vesnického přístavu vyjíždějí lodě tří provozovatelů: celodenní výlety národním parkem Kornati, plavby mezi ostrovy na Dugi Otok a pláž Sakarun a rybářské výlety s místními rybáři brzy ráno nebo při západu slunce. Rádi vám je zarezervujeme.</p>
           </div>
         </article>
         <article class="thing">
-          <img src="/img/island/cycling.jpg" alt="Cyklista na klidné silnici u domu" loading="lazy">
+          <img src="/img/island/cycling.webp" alt="Cyklista na klidné silnici u domu" loading="lazy">
           <div>
             <h3>Na kole</h3>
             <p>Celým ostrovem vede jedna silnice, po obou stranách moře a mezi nimi olivové háje a borové lesy. Většinou je nenáročná, jen ve vnitrozemí je pár kopců. Můžete si od nás půjčit kola.</p>
           </div>
         </article>
         <article class="thing">
-          <img src="/img/island/tkon.jpg" alt="Kamenné domy podél pobřeží při pohledu z trajektu, v pozadí hory na pevnině" loading="lazy">
+          <img src="/img/island/tkon.webp" alt="Kamenné domy podél pobřeží při pohledu z trajektu, v pozadí hory na pevnině" loading="lazy">
           <div>
             <h3>Tkon a trajekt</h3>
             <p>Tkon, 10 km jižně na cípu ostrova, je hlavní obcí Pašmanu a jeho trajektovým přístavem a najdete tu lékárnu. Trajekt do Biogradu na Moru jede asi 20 minut.</p>
@@ -358,7 +495,7 @@
         <div class="trips-groups">
           <div class="trip-group">
             <h4>Lodí z vesnického přístavu</h4>
-            <img class="trip-img" src="/img/trips/sailing.jpg" alt="Plachtění v zadarském souostroví" loading="lazy" width="800" height="600">
+            <img class="trip-img" src="/img/trips/sailing.webp" alt="Plachtění v zadarském souostroví" loading="lazy" width="800" height="600">
             <ul class="trip-list">
               <li>
                 <a href="https://www.np-kornati.hr/index.php?lang=en" target="_blank" rel="noopener">Národní park Kornati</a>
@@ -366,7 +503,7 @@
                 <p>Bludiště holých vápencových ostrovů, útesů a zátok na otevřeném moři. Výletní lodě vyplouvají z Neviđan a obvykle se zastavují na koupání a oběd.</p>
               </li>
               <li>
-                <img class="trip-img" src="/img/trips/telascica-hills.jpg" alt="Holé vápencové kopce Telašćice nad mořem" loading="lazy" width="800" height="600">
+                <img class="trip-img" src="/img/trips/telascica-hills.webp" alt="Holé vápencové kopce Telašćice nad mořem" loading="lazy" width="800" height="600">
                 <a href="https://pp-telascica.hr/" target="_blank" rel="noopener">Přírodní park Telašćica</a>
                 <span class="trip-meta">Celý den, často spojený s Kornati</span>
                 <p>Dlouhá chráněná zátoka na ostrově Dugi Otok, na vnější straně mořské útesy a slané jezero Mir, ve kterém se můžete vykoupat.</p>
@@ -382,7 +519,7 @@
             <h4>Autem, trajektem do Biogradu</h4>
             <ul class="trip-list">
               <li>
-                <img class="trip-img" src="/img/trips/zadar.jpg" alt="Kostel sv. Donáta se zvonicí v Zadaru" loading="lazy" width="800" height="600">
+                <img class="trip-img" src="/img/trips/zadar.webp" alt="Kostel sv. Donáta se zvonicí v Zadaru" loading="lazy" width="800" height="600">
                 <a href="https://zadar.travel/" target="_blank" rel="noopener">Zadar</a>
                 <span class="trip-meta">Asi 40 min z Biogradu, nebo trajektem z Ugljanu</span>
                 <p>Římské fórum, Mořské varhany a Pozdrav slunci na nábřeží a západ slunce, který prý Alfred Hitchcock označil za nejkrásnější na světě.</p>
@@ -393,13 +530,13 @@
                 <p>Největší přírodní jezero v Chorvatsku a ptačí rezervace, s rovinatou stezkou pro cyklisty i pěší podél břehu.</p>
               </li>
               <li>
-                <img class="trip-img" src="/img/trips/krka.jpg" alt="Vodopády v národním parku Krka" loading="lazy" width="800" height="600">
+                <img class="trip-img" src="/img/trips/krka.webp" alt="Vodopády v národním parku Krka" loading="lazy" width="800" height="600">
                 <a href="https://www.npkrka.hr/" target="_blank" rel="noopener">Národní park Krka</a>
                 <span class="trip-meta">Asi 1 hodina z Biogradu</span>
                 <p>Vodopády a travertinové tůně na řece Krce, které si prohlédnete z dřevěných lávek. V létě vyrazte brzy ráno.</p>
               </li>
               <li>
-                <img class="trip-img" src="/img/trips/sibenik.jpg" alt="Průčelí katedrály sv. Jakuba v Šibeniku" loading="lazy" width="800" height="600">
+                <img class="trip-img" src="/img/trips/sibenik.webp" alt="Průčelí katedrály sv. Jakuba v Šibeniku" loading="lazy" width="800" height="600">
                 <a href="https://www.visitsibenik.hr/en/" target="_blank" rel="noopener">Šibenik</a>
                 <span class="trip-meta">Asi 50 min z Biogradu</span>
                 <p>Kamenné staré město se strmými uličkami a katedrálou sv. Jakuba, zapsanou na seznamu světového dědictví UNESCO.</p>
@@ -450,6 +587,50 @@
         <div class="map">
           <iframe title="Satelitní mapa ostrova Pašman s Casa Siesta v Neviđanech" src="https://maps.google.com/maps?q=Put+Tratice+6,+Nevi%C4%91ane,+Pa%C5%A1man,+Croatia&t=k&z=11&hl=cs&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <a class="btn btn-ghost-dark" href="https://www.google.com/maps/dir/?api=1&destination=Put+Tratice+6%2C+23264+Nevi%C4%91ane%2C+Croatia" target="_blank" rel="noopener">Naplánovat trasu v Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <h2 id="faq-title" class="section-title">Na co se hosté ptají</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Můžeme přijet se zvířetem?</summary>
+            <p>Ano. Mazlíčci jsou vítáni a pobyt mají zdarma.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Jaký je minimální pobyt?</summary>
+            <p>Sedm nocí. Přijet můžete kterýkoli den v týdnu. Otevřeno máme od června do září.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Co je v ceně?</summary>
+            <p>Ložní prádlo, ručníky, turistická taxa a závěrečný úklid. Nic dalšího neplatíte.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Jak daleko je pláž?</summary>
+            <p>Vesnická pláž je asi 200 m od domu. Voda je průzračná a mělká.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Který apartmán se k nám hodí?</summary>
+            <p>Mar zabírá celé horní patro se střešní terasou a vejde se do něj až 5 osob. Sol je v přízemí s krytou terasou a je také pro až 5 osob. Brisa je menší apartmán v přízemí pro až 4 osoby.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Máte dětskou postýlku a jídelní židličku?</summary>
+            <p>Ano, máme obojí. Stačí nám dát vědět při rezervaci.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Dá se u vás parkovat?</summary>
+            <p>Ano, parkování u domu je zdarma a je tu místo pro 5–6 aut.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Jak se k vám dostaneme?</summary>
+            <p>Jeďte trajektem z Gaženice v Zadaru do Preka (25 minut) a pak asi 30 minut autem, nebo trajektem z Biogradu na Moru do Tkonu (20 minut) a pak asi 15 minut autem. Z letiště v Zadaru je to asi 1½ hodiny včetně trajektu.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Jak si můžeme rezervovat?</summary>
+            <p>Napište nám na WhatsApp, zavolejte na +385 98 830 940 nebo pošlete e-mail na info@casa-siesta.org a uveďte termín a počet hostů. Potvrdíme vám dostupnost a cenu. Mluvíme chorvatsky a anglicky.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -524,6 +705,6 @@
   ]
 }
   </script>
-  <script src="/script.js?v=13" defer></script>
+  <script src="/script.js?v=14" defer></script>
 </body>
 </html>

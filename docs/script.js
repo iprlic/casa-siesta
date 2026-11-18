@@ -2,7 +2,7 @@
 // Captions live in the page (one set per language) so this file stays shared.
 const photoData = JSON.parse(document.getElementById("photo-data").textContent);
 const photos = photoData.captions.map((alt, i) => ({
-  src: `/img/mar/${String(i + 1).padStart(2, "0")}.jpg`,
+  src: `/img/mar/${String(i + 1).padStart(2, "0")}.webp`,
   alt,
 }));
 

@@ -35,10 +35,9 @@
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/img/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=13">
+  <link rel="preload" href="/fonts/bricolage-grotesque-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/newsreader-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css?v=14">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -119,7 +118,145 @@
       "hr",
       "en"
     ],
-    "priceRange": "€80–€120 per night"
+    "priceRange": "€80–€120 per night",
+    "description": "Three family-run holiday apartments (Mar, Brisa and Sol) in Neviđane on Pašman island, Croatia, about 200 m from the village beach. Open June to September, minimum stay 7 nights, pets welcome.",
+    "containsPlace": [
+      {
+        "@type": "Apartment",
+        "name": "Apartment Mar",
+        "description": "Whole upper floor with a roof terrace and a balcony, sea view over the pines. €100 a night, €120 from 15 July to 15 August.",
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 51,
+          "unitCode": "MTK"
+        },
+        "numberOfBedrooms": 2,
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "maxValue": 5
+        },
+        "bed": "Double bed, two single beds, sofa bed",
+        "petsAllowed": true
+      },
+      {
+        "@type": "Apartment",
+        "name": "Apartment Brisa",
+        "description": "Smaller ground-floor apartment with a new kitchen, using the garden. €80 a night, €100 from 15 July to 15 August.",
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 30,
+          "unitCode": "MTK"
+        },
+        "numberOfBedrooms": 1,
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "maxValue": 4
+        },
+        "bed": "Bunk bed, sofa bed that opens into a double",
+        "petsAllowed": true
+      },
+      {
+        "@type": "Apartment",
+        "name": "Apartment Sol",
+        "description": "Ground-floor apartment with a covered terrace under a vine. €100 a night, €120 from 15 July to 15 August.",
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 51,
+          "unitCode": "MTK"
+        },
+        "numberOfBedrooms": 2,
+        "occupancy": {
+          "@type": "QuantitativeValue",
+          "maxValue": 5
+        },
+        "bed": "Queen-size bed, bunk bed, single bed",
+        "petsAllowed": true
+      }
+    ],
+    "sameAs": [
+      "https://www.google.com/maps?cid=14389742535623081854"
+    ]
+  }
+  </script>
+  <script type="application/ld+json" id="faq-data">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "pl",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Czy można przyjechać ze zwierzęciem?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak. Zwierzęta są mile widziane i nie płacisz za nie nic dodatkowo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jaki jest minimalny pobyt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Siedem nocy. Możesz przyjechać w dowolny dzień tygodnia. Jesteśmy otwarci od czerwca do września."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Co jest wliczone w cenę?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pościel, ręczniki, opłata klimatyczna i sprzątanie końcowe. Nie ma żadnych dodatkowych opłat."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak daleko jest do plaży?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Plaża w wiosce jest około 200 m od domu. Woda jest czysta i płytka."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Który apartament będzie dla nas najlepszy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mar zajmuje całe piętro, ma taras na dachu i mieści do 5 osób. Sol jest na parterze, ma zadaszony taras i również mieści do 5 osób. Brisa to mniejszy apartament na parterze, dla maksymalnie 4 osób."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy macie łóżeczko dziecięce i krzesełko do karmienia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak, mamy jedno i drugie. Daj nam tylko znać przy rezerwacji."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy jest parking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak, bezpłatny parking przy domu, z miejscem na 5–6 samochodów."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak do Was dojechać?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Popłyń promem samochodowym z Gaženicy w Zadarze do Preko (25 minut) i jedź dalej około 30 minut albo popłyń promem z Biogradu na Moru do Tkonu (20 minut) i jedź około 15 minut. Z lotniska w Zadarze droga zajmuje około 1,5 godziny razem z promem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak zarezerwować pobyt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Napisz do nas na WhatsAppie lub zadzwoń pod numer +385 98 830 940 albo wyślij e-mail na adres info@casa-siesta.org, podając termin i liczbę osób. Potwierdzimy dostępność i cenę. Mówimy po chorwacku i po angielsku."
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -154,9 +291,9 @@
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
-      <img class="hero-img" src="/img/hero-1600.jpg" srcset="/img/hero-800.jpg 800w, /img/hero-1200.jpg 1200w, /img/hero-1600.jpg 1600w, /img/hero.jpg 2400w" sizes="(max-width: 960px) 100vw, 67vw" alt="Widok z punktu widokowego Veliki Bokolj: zielona makia, kanał Pašmański i stały ląd pod białymi chmurami" fetchpriority="high">
+      <img class="hero-img" src="/img/hero-1600.webp" srcset="/img/hero-800.webp 800w, /img/hero-1200.webp 1200w, /img/hero-1600.webp 1600w, /img/hero.webp 2400w" sizes="(max-width: 960px) 100vw, 67vw" alt="Widok z punktu widokowego Veliki Bokolj: zielona makia, kanał Pašmański i stały ląd pod białymi chmurami" fetchpriority="high">
       <div class="hero-text">
-        <h1 id="hero-title">Casa<br>Siesta</h1>
+        <h1 id="hero-title">Casa<br>Siesta<span class="h1-sub">Apartamenty wakacyjne na wyspie Pašman</span></h1>
         <p class="hero-lede">Trzy apartamenty wakacyjne w Neviđane, rybackiej wsi na spokojnej wyspie Pašman w Chorwacji. Do plaży jest około 200 m, a życie płynie tu powoli.</p>
         <div class="hero-actions">
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Dzie%C5%84%20dobry%2C%20mam%20pytanie%20dotycz%C4%85ce%20pobytu%20w%20Casa%20Siesta." target="_blank" rel="noopener">Zapytaj o terminy i ceny</a>
@@ -192,11 +329,11 @@
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Dzie%C5%84%20dobry%2C%20mam%20pytanie%20dotycz%C4%85ce%20Apartamentu%20Mar." target="_blank" rel="noopener">Zapytaj o Mar</a>
         </div>
         <div class="apt-gallery" data-gallery="mar">
-          <button class="g g-main" data-index="0"><img src="/img/mar/01.jpg" alt="Taras na dachu z widokiem na morze" loading="lazy"></button>
-          <button class="g" data-index="1"><img src="/img/mar/02-sm.jpg" alt="Zacieniony taras ze stołem" loading="lazy"></button>
-          <button class="g" data-index="5"><img src="/img/mar/06-sm.jpg" alt="Kuchnia" loading="lazy"></button>
-          <button class="g" data-index="10"><img src="/img/mar/11-sm.jpg" alt="Sypialnia z łóżkiem podwójnym" loading="lazy"></button>
-          <button class="g g-more" data-index="13"><img src="/img/mar/14-sm.jpg" alt="Sypialnia z dwoma łóżkami pojedynczymi" loading="lazy"><span>Wszystkie 20 zdjęć</span></button>
+          <button class="g g-main" data-index="0"><img src="/img/mar/01-md.webp" alt="Taras na dachu z widokiem na morze" loading="lazy"></button>
+          <button class="g" data-index="1"><img src="/img/mar/02-sm.webp" alt="Zacieniony taras ze stołem" loading="lazy"></button>
+          <button class="g" data-index="5"><img src="/img/mar/06-sm.webp" alt="Kuchnia" loading="lazy"></button>
+          <button class="g" data-index="10"><img src="/img/mar/11-sm.webp" alt="Sypialnia z łóżkiem podwójnym" loading="lazy"></button>
+          <button class="g g-more" data-index="13"><img src="/img/mar/14-sm.webp" alt="Sypialnia z dwoma łóżkami pojedynczymi" loading="lazy"><span>Wszystkie 20 zdjęć</span></button>
         </div>
       </article>
 
@@ -216,9 +353,9 @@
         </div>
         <figure class="apt-single">
           <div class="trio">
-            <img class="trio-main" src="/img/brisa/01.jpg" alt="Nowa kuchnia w Brisie z czarną lodówką" loading="lazy">
-            <img src="/img/brisa/02-sm.jpg" alt="Kuchnia z drzwiami na zewnątrz" loading="lazy">
-            <img src="/img/brisa/03-sm.jpg" alt="Wysoka drewniana szafa" loading="lazy">
+            <img class="trio-main" src="/img/brisa/01.webp" alt="Nowa kuchnia w Brisie z czarną lodówką" loading="lazy">
+            <img src="/img/brisa/02-sm.webp" alt="Kuchnia z drzwiami na zewnątrz" loading="lazy">
+            <img src="/img/brisa/03-sm.webp" alt="Wysoka drewniana szafa" loading="lazy">
           </div>
           <figcaption>Wkrótce dodamy więcej zdjęć Brisy. Napisz do nas na WhatsAppie, a wyślemy Ci kilka.</figcaption>
         </figure>
@@ -239,7 +376,7 @@
           <a class="btn btn-wa" href="https://wa.me/38598830940?text=Dzie%C5%84%20dobry%2C%20mam%20pytanie%20dotycz%C4%85ce%20Apartamentu%20Sol." target="_blank" rel="noopener">Zapytaj o Sol</a>
         </div>
         <figure class="apt-single">
-          <img src="/img/sol/terrace.jpg" alt="Zacieniony taras apartamentu Sol pod winoroślą i markizą" loading="lazy">
+          <img src="/img/sol/terrace.webp" alt="Zacieniony taras apartamentu Sol pod winoroślą i markizą" loading="lazy">
           <figcaption>Wkrótce dodamy więcej zdjęć apartamentu Sol. Napisz do nas na WhatsAppie, a wyślemy Ci kilka.</figcaption>
         </figure>
       </article>
@@ -273,11 +410,11 @@
           <div>
             <p>Wszystkie trzy apartamenty znajdują się w jednym domu, otoczonym ogrodem z cytrusami, innymi drzewami owocowymi i naszymi grządkami warzywnymi. Możesz śmiało posiedzieć w ogrodzie. W pobliżu rosną stare drzewa oliwne, a kot sąsiadów często wpada się przywitać.</p>
             <div class="garden-photos">
-              <img class="gp-main" src="/img/garden/house.jpg" alt="Dom w ogrodzie z trawnikiem i drzewami owocowymi" loading="lazy">
-              <img src="/img/garden/citrus.jpg" alt="Drzewo cytrusowe z dojrzałymi owocami w ogrodzie" loading="lazy">
-              <img src="/img/garden/vegetables.jpg" alt="Nasze grządki warzywne" loading="lazy">
-              <img src="/img/garden/olive.jpg" alt="Pień starego drzewa oliwnego w pobliżu" loading="lazy">
-              <img src="/img/garden/cat.jpg" alt="Kot sąsiadów w ogrodzie" loading="lazy">
+              <img class="gp-main" src="/img/garden/house.webp" alt="Dom w ogrodzie z trawnikiem i drzewami owocowymi" loading="lazy">
+              <img src="/img/garden/citrus.webp" alt="Drzewo cytrusowe z dojrzałymi owocami w ogrodzie" loading="lazy">
+              <img src="/img/garden/vegetables.webp" alt="Nasze grządki warzywne" loading="lazy">
+              <img src="/img/garden/olive.webp" alt="Pień starego drzewa oliwnego w pobliżu" loading="lazy">
+              <img src="/img/garden/cat.webp" alt="Kot sąsiadów w ogrodzie" loading="lazy">
             </div>
           </div>
         </div>
@@ -295,35 +432,35 @@
 
       <div class="wrap things">
         <article class="thing thing-wide">
-          <img src="/img/island/bokolj.jpg" alt="Zachód słońca nad wyspami z Velikiego Bokolja, dziecko patrzy" loading="lazy">
+          <img src="/img/island/bokolj.webp" alt="Zachód słońca nad wyspami z Velikiego Bokolja, dziecko patrzy" loading="lazy">
           <div>
             <h3>Punkt widokowy Veliki Bokolj</h3>
             <p>Punkt widokowy nad Dobropoljaną, około 3 km od domu, odsłania cały kanał, stały ląd i wyspy na zachodzie. Wejdź tam o zachodzie słońca.</p>
           </div>
         </article>
         <article class="thing">
-          <img src="/img/island/paddleboard.jpg" alt="Pływanie na desce SUP w zatoce przy domu" loading="lazy">
+          <img src="/img/island/paddleboard.webp" alt="Pływanie na desce SUP w zatoce przy domu" loading="lazy">
           <div>
             <h3>Plaża</h3>
             <p>Plaża w wiosce jest około 200 m od domu. Woda jest czysta i płytka, dobra do pływania i snorkelingu, a tłoczno bywa tu rzadko. Możesz pożyczyć od nas deskę SUP i kajaki.</p>
           </div>
         </article>
         <article class="thing">
-          <img src="/img/island/telascica.jpg" alt="Wysepka z latarnią morską w Parku Przyrody Telašćica, widziana z łodzi" loading="lazy">
+          <img src="/img/island/telascica.webp" alt="Wysepka z latarnią morską w Parku Przyrody Telašćica, widziana z łodzi" loading="lazy">
           <div>
             <h3>Wycieczki łodzią</h3>
             <p>Z portu w wiosce wypływają łodzie trzech organizatorów: całodniowe rejsy po Parku Narodowym Kornati, rejsy między wyspami na Dugi Otok i plażę Sakarun oraz wyprawy na ryby z miejscowymi rybakami, wcześnie rano lub o zachodzie słońca. Chętnie zarezerwujemy je dla Ciebie.</p>
           </div>
         </article>
         <article class="thing">
-          <img src="/img/island/cycling.jpg" alt="Rowerzysta na spokojnej drodze niedaleko domu" loading="lazy">
+          <img src="/img/island/cycling.webp" alt="Rowerzysta na spokojnej drodze niedaleko domu" loading="lazy">
           <div>
             <h3>Rower</h3>
             <p>Przez całą długość wyspy biegnie jedna droga, z morzem po obu stronach, a pomiędzy nimi gajami oliwnymi i sosnowym lasem. Trasa jest przeważnie łagodna, z kilkoma wzniesieniami w głębi wyspy. Możesz pożyczyć od nas rowery.</p>
           </div>
         </article>
         <article class="thing">
-          <img src="/img/island/tkon.jpg" alt="Kamienne domy wzdłuż brzegu widziane z promu, w tle góry na stałym lądzie" loading="lazy">
+          <img src="/img/island/tkon.webp" alt="Kamienne domy wzdłuż brzegu widziane z promu, w tle góry na stałym lądzie" loading="lazy">
           <div>
             <h3>Tkon i prom</h3>
             <p>Tkon, 10 km na południe, na samym krańcu wyspy, to główna miejscowość Pašmanu i jego port promowy. Jest tu też apteka. Prom do Biogradu na Moru płynie około 20 minut.</p>
@@ -358,7 +495,7 @@
         <div class="trips-groups">
           <div class="trip-group">
             <h4>Łodzią z portu w wiosce</h4>
-            <img class="trip-img" src="/img/trips/sailing.jpg" alt="Żeglowanie po archipelagu Zadaru" loading="lazy" width="800" height="600">
+            <img class="trip-img" src="/img/trips/sailing.webp" alt="Żeglowanie po archipelagu Zadaru" loading="lazy" width="800" height="600">
             <ul class="trip-list">
               <li>
                 <a href="https://www.np-kornati.hr/index.php?lang=en" target="_blank" rel="noopener">Park Narodowy Kornati</a>
@@ -366,7 +503,7 @@
                 <p>Labirynt nagich wapiennych wysp, klifów i zatok na otwartym morzu. Łodzie wycieczkowe wypływają z Neviđane i zwykle zatrzymują się na kąpiel i obiad.</p>
               </li>
               <li>
-                <img class="trip-img" src="/img/trips/telascica-hills.jpg" alt="Nagie wapienne wzgórza Telašćicy nad morzem" loading="lazy" width="800" height="600">
+                <img class="trip-img" src="/img/trips/telascica-hills.webp" alt="Nagie wapienne wzgórza Telašćicy nad morzem" loading="lazy" width="800" height="600">
                 <a href="https://pp-telascica.hr/" target="_blank" rel="noopener">Park Przyrody Telašćica</a>
                 <span class="trip-meta">Cały dzień, często w połączeniu z Kornati</span>
                 <p>Długa, osłonięta zatoka na Dugim Otoku, morskie klify od strony otwartego morza i słone jezioro Mir, w którym można się kąpać.</p>
@@ -382,7 +519,7 @@
             <h4>Samochodem, promem przez Biograd</h4>
             <ul class="trip-list">
               <li>
-                <img class="trip-img" src="/img/trips/zadar.jpg" alt="Kościół św. Donata i dzwonnica w Zadarze" loading="lazy" width="800" height="600">
+                <img class="trip-img" src="/img/trips/zadar.webp" alt="Kościół św. Donata i dzwonnica w Zadarze" loading="lazy" width="800" height="600">
                 <a href="https://zadar.travel/" target="_blank" rel="noopener">Zadar</a>
                 <span class="trip-meta">Około 40 min od Biogradu albo promem z Ugljanu</span>
                 <p>Forum rzymskie, Organy Morskie i Pozdrowienie dla Słońca na nabrzeżu oraz zachód słońca, który Alfred Hitchcock miał podobno nazwać najpiękniejszym na świecie.</p>
@@ -393,13 +530,13 @@
                 <p>Największe naturalne jezioro Chorwacji i rezerwat ptaków, z płaską ścieżką rowerową i spacerową wzdłuż brzegu.</p>
               </li>
               <li>
-                <img class="trip-img" src="/img/trips/krka.jpg" alt="Wodospady w Parku Narodowym Krka" loading="lazy" width="800" height="600">
+                <img class="trip-img" src="/img/trips/krka.webp" alt="Wodospady w Parku Narodowym Krka" loading="lazy" width="800" height="600">
                 <a href="https://www.npkrka.hr/" target="_blank" rel="noopener">Park Narodowy Krka</a>
                 <span class="trip-meta">Około 1 godz. od Biogradu</span>
                 <p>Wodospady i trawertynowe baseny na rzece Krka, oglądane z drewnianych kładek. Latem warto przyjechać wcześnie.</p>
               </li>
               <li>
-                <img class="trip-img" src="/img/trips/sibenik.jpg" alt="Fasada katedry św. Jakuba w Szybeniku" loading="lazy" width="800" height="600">
+                <img class="trip-img" src="/img/trips/sibenik.webp" alt="Fasada katedry św. Jakuba w Szybeniku" loading="lazy" width="800" height="600">
                 <a href="https://www.visitsibenik.hr/en/" target="_blank" rel="noopener">Šibenik</a>
                 <span class="trip-meta">Około 50 min od Biogradu</span>
                 <p>Kamienne stare miasto ze stromymi uliczkami i katedrą św. Jakuba, wpisaną na Listę światowego dziedzictwa UNESCO.</p>
@@ -450,6 +587,50 @@
         <div class="map">
           <iframe title="Mapa satelitarna wyspy Pašman z zaznaczonym położeniem Casa Siesta w Neviđane" src="https://maps.google.com/maps?q=Put+Tratice+6,+Nevi%C4%91ane,+Pa%C5%A1man,+Croatia&t=k&z=11&hl=pl&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           <a class="btn btn-ghost-dark" href="https://www.google.com/maps/dir/?api=1&destination=Put+Tratice+6%2C+23264+Nevi%C4%91ane%2C+Croatia" target="_blank" rel="noopener">Wyznacz trasę w Mapach Google</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <h2 id="faq-title" class="section-title">Najczęstsze pytania gości</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Czy można przyjechać ze zwierzęciem?</summary>
+            <p>Tak. Zwierzęta są mile widziane i nie płacisz za nie nic dodatkowo.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Jaki jest minimalny pobyt?</summary>
+            <p>Siedem nocy. Możesz przyjechać w dowolny dzień tygodnia. Jesteśmy otwarci od czerwca do września.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Co jest wliczone w cenę?</summary>
+            <p>Pościel, ręczniki, opłata klimatyczna i sprzątanie końcowe. Nie ma żadnych dodatkowych opłat.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Jak daleko jest do plaży?</summary>
+            <p>Plaża w wiosce jest około 200 m od domu. Woda jest czysta i płytka.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Który apartament będzie dla nas najlepszy?</summary>
+            <p>Mar zajmuje całe piętro, ma taras na dachu i mieści do 5 osób. Sol jest na parterze, ma zadaszony taras i również mieści do 5 osób. Brisa to mniejszy apartament na parterze, dla maksymalnie 4 osób.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Czy macie łóżeczko dziecięce i krzesełko do karmienia?</summary>
+            <p>Tak, mamy jedno i drugie. Daj nam tylko znać przy rezerwacji.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Czy jest parking?</summary>
+            <p>Tak, bezpłatny parking przy domu, z miejscem na 5–6 samochodów.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Jak do Was dojechać?</summary>
+            <p>Popłyń promem samochodowym z Gaženicy w Zadarze do Preko (25 minut) i jedź dalej około 30 minut albo popłyń promem z Biogradu na Moru do Tkonu (20 minut) i jedź około 15 minut. Z lotniska w Zadarze droga zajmuje około 1,5 godziny razem z promem.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Jak zarezerwować pobyt?</summary>
+            <p>Napisz do nas na WhatsAppie lub zadzwoń pod numer +385 98 830 940 albo wyślij e-mail na adres info@casa-siesta.org, podając termin i liczbę osób. Potwierdzimy dostępność i cenę. Mówimy po chorwacku i po angielsku.</p>
+          </details>
         </div>
       </div>
     </section>
@@ -524,6 +705,6 @@
   ]
 }
   </script>
-  <script src="/script.js?v=13" defer></script>
+  <script src="/script.js?v=14" defer></script>
 </body>
 </html>
